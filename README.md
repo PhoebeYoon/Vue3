@@ -16,4 +16,40 @@ mount(css 셀렉터)인데 클래스나 다른 것은 여러개일 수 있어서
 <img width="435" alt="스크린샷 2023-02-24 오후 8 07 09" src="https://user-images.githubusercontent.com/48478079/221164464-b2a098be-1c0e-44e5-bdf0-dafa17751b02.png">
 
 이미지에서 'data-v-app'를 찾아보자.
+이제 script 내용을 바꿔보자  
+``` html
+<script>
+        Vue.createApp(
+            {
+                data() {
+                    return {
+                        
+                    }
+                }
+            }
+        ).mount('#container')
+    </script>
+```
+여기에 내용을 추가해 보자   
 
+``` html
+<div id="container">
+        <h1>{{ pageTitle }}</h1>
+        <p>
+            {{ pageContent}}
+        </p>
+    </div>
+    <script>
+        Vue.createApp(
+            {
+                data() {
+                    return {
+                        pageTitle:'Hello, Vue ',
+                        pageContent : 'Welcome to wonderful world'
+                    }
+                }
+            }
+        ).mount('#container')
+    </script>
+```
+결과를 확인한다 
