@@ -37,4 +37,6 @@ var app = new Vue(
 결과는,  ( live server를 실행시킨 상태이다)  
 <img width="304" alt="스크린샷 2023-02-24 오후 2 57 36" src="https://user-images.githubusercontent.com/48478079/221103454-26199283-443e-4ba7-8b8f-ed9c538dcee7.png">
 
+코드를 살펴보자.   
+<img width="990" alt="스크린샷 2023-02-24 오후 3 00 33" src="https://user-images.githubusercontent.com/48478079/221104253-df3c24fa-9244-42ab-8cc5-14a9f78564cf.png">
 
