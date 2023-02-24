@@ -55,3 +55,13 @@ Vue.createApp({
 <li class="nav-item"> <a href="#" class="nav-link">{{links[1]}}</a></li>
 <li class="nav-item"> <a href="#" class="nav-link">{{links[2]}}</a></li>
 ```
+이렇게해서 배열에 들어간 요소들을 하나씩 적용했다. 그런데 여기에 for문을 적용하면 어떨까 li태그를 3번 반복해서 같은 결과를 출력해보자. 
+```html
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+   <li v-for="link in links" class="nav-item">
+     <a href="#" class="nav-link">{{ link }}</a>
+   </li>
+</ul>
+```
+여기에  <b> v-for="link in links" 와 {{ link }} </b>인것을 확인해본다.  
+
