@@ -1,6 +1,7 @@
 # Vue3 Lesson 를 위해 
 ## Vue3 & mySql  
 
+#### 첫번째 시도는 이렇게 해보자.
 1 . 사용할 에디터 :  vs code
   - html 파일생성시에 기본  lang="en" 아닌 lang='ko' 로 바꾸자
   - vscode > setting(설정) > 검색창 : emmet 엔터 > 스크롤다운해서 아래쪽으로 >   
@@ -16,3 +17,26 @@
       html 페이지에 복사붙여넣기한다   
 3. 크롬 브라우저를 실행하고 확장프로그램에 <b> Vue Devtools</b> 를 설치해 보자. 혹 npm 에 대한 경험이 있다면,  
    ``` npm install --global @vue/cli   ``` 시도해 보자   
+4. 
+```html: index.hmtl 
+ <!-- index.html -->
+      <html lang="ko">
+      <head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+          <title>Learning Vue</title>
+      </head>
+      <body>
+          <h1>Hello Vue world</h1>
+          <script src="app.js"></script>
+      </body>
+      </html>
+```
+```html
+<!-- app.js -->
+빈상태로  저장 
+```
+
+
