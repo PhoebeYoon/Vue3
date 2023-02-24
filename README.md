@@ -18,7 +18,7 @@
 3. 크롬 브라우저를 실행하고 확장프로그램에 <b> Vue Devtools</b> 를 설치해 보자. 혹 npm 에 대한 경험이 있다면,  
    ``` npm install --global @vue/cli   ``` 시도해 보자   
 4. 
-```html: index.hmtl 
+```html
  <!-- index.html -->
       <html lang="ko">
       <head>
