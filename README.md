@@ -66,5 +66,5 @@ app.mount(document.body.firstChild)
 ### Options: State 
 https://vuejs.org/api/options-state.html 클릭
 
-#### data() 
+#### 1. data() 
 이것은 컴포넌트 인스턴스의 초기 반응상태를 반환하는 함수이다. 이 함수는 일반 자바스크립트 객체를 반환하며 Vue에 의해 반응적으로 만들어진다. 인스턴스가 생성되면 반응형데이터 객체를 액세스할 수 있게 한다. 
