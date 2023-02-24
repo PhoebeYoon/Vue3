@@ -13,10 +13,10 @@
 2.  vue.js 를 html 페이지에 삽입하기
   - ``` https://developer.mozilla.org/ko/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started  사이트로 방문 ```
   - CDN 방식으로 가져오기(개발용):    
-     ``` <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``` 를   
-      html 페이지에 복사붙여넣기한다   
-3. 크롬 브라우저를 실행하고 확장프로그램에 <b> Vue Devtools</b> 를 설치해 보자. 혹 npm 에 대한 경험이 있다면,  
-   ``` npm install --global @vue/cli   ``` 시도해 보자   
+     ``` <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``` 를 html 페이지에 복사붙여넣기한다. 혹 npm 에 대한 경험이 있다면, 
+     ``` npm install --global @vue/cli   ``` 시도해 보자  
+3. 크롬 브라우저를 실행하고 확장프로그램에 <b> Vue Devtools</b> 를 설치해 보자.  
+    
 4. 
 ```html
  <!-- index.html -->
