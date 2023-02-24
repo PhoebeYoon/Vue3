@@ -40,4 +40,4 @@ console.log('welome to vue world')
 ```
 5. 크롬 브라우저에서 개발자도구를 열고 console 창을 확인해 보자  -끝-
 
-% ``` https://vuejs.org/examples/ ```  방문하면 vue로 작성된 샘플들을 볼 수 있다
+:cactus: ``` https://vuejs.org/examples/ ```  방문하면 vue로 작성된 샘플들을 볼 수 있다
