@@ -34,7 +34,9 @@ efficiently develop user interfaces, be they simple or complex.
 ```  컴포넌트는 화면에 비춰지는 뷰의 단위를 쪼개어 재활용이 가능한 형태로 관리하는 것, Vue은 재사용이 가능한 컴포넌트로 웹페이지를 구성할 수 있다  ```   
 
 
-2. Vue.js는 '데이터와 뷰(view) 를 연결해 주는 역할'로 설명해 보자   
-- 위의 이미지를 이렇게도 해석해 볼수 있다. 여기서의 모델(model)은 <U>Vue 안에 들어가는 데이터로</U> View를 <U> html에서 표시되는 요소</U>로 그리고 중간에 ViewModel이라는 것이 있다.  
+2. Vue.js는 <b>'데이터와 뷰(view) 를 연결해 주는 역할'</b>로 설명해 보자   
+- 위의 이미지를 다음과 같이 해석해 볼수 있다. 여기서의 모델(model)은 <U>Vue 안에 들어가는 데이터로</U> View를 <U> html에서 표시되는 요소</U>로 그리고 중간에 ViewModel이라는 것이 있다.  
 
-<img width="630" alt="스크린샷 2023-02-24 오후 1 10 26" src="https://user-images.githubusercontent.com/48478079/221098801-43856de0-710e-4d2a-92e9-edb093deef4f.png">
+<img width="630" alt="스크린샷 2023-02-24 오후 1 10 26" src="https://user-images.githubusercontent.com/48478079/221098801-43856de0-710e-4d2a-92e9-edb093deef4f.png">   
+
+
