@@ -63,3 +63,8 @@ var app = new Vue(
     }
 )
 ```
+
+다시 살펴보자.
+
+<img width="791" alt="스크린샷 2023-02-24 오후 3 20 09" src="https://user-images.githubusercontent.com/48478079/221107207-1909fe49-089e-4423-bc6c-f6823dbd5305.png">
+
