@@ -2,7 +2,18 @@
 
 1. Vue란 
 
-뷰(Vue)는 사용자 인터페이스를 구축하기 위한 자바스크립트 프레임워크이다. 표준 html, css, javascript를 기반으로 구축되며 사용자 인터페이스를 효율적으로 개발할 수 있도록 도와주는 __선언적이고__  __구성요소__ 기반의 프로그래밍 __모델__ 을 제공한다. vue의 공식문서에는 이렇게 뷰를 설명하고 있다. 여기서 3개의 용어에 대해 이해해 보자
+뷰(Vue)는 사용자 인터페이스를 구축하기 위한 자바스크립트 프레임워크이다. 표준 html, css, javascript를 기반으로 구축되며 사용자 인터페이스를 효율적으로 개발할 수 있도록 도와주는 __선언적이고(declarative)__  __구성요소(Component)__ 기반의 프로그래밍 __모델(model)__ 을 제공한다. vue의 공식문서에는 이렇게 뷰를 설명하고 있다. 
+이것을 영어로 보면 보다 명확하다.
+
+```
+Vue (pronounced /vjuː/, like view) is a JavaScript framework for building 
+user interfaces.
+It builds on top of standard HTML, CSS, and JavaScript and provides 
+a declarative and component-based programming model that helps you 
+efficiently develop user interfaces, be they simple or complex.
+```
+
+
 > <b>선언적</b> -  여기서 선언적이라는 것은 선언적 랜더링을 한다는 의미로, 이것은 뷰가 자바스크립트를 기반으로 hmtl 문서를 출력할때 템플릿 구문을  사용한다는 뜻이다. ```템플릿이란 워드프로세서에서 사용된 용어인데, 이미 일부 세부정보가 있는 샘플문서를 말한다. ```   
 그러니 여기서 우리는 Vue가 뭔가를 미리 만들어놓고 그것을 마치 정해진 양식처럼 가져와 사용한다는 것을 짐작할 수 있다   
 
@@ -20,4 +31,9 @@
 *출처:https://wikidocs.net/17701*
  
 이런 이미지를 찾을 수 있다 이걸 보면 조금 더 이해가 되는듯하다  해당 문서에는 컴포넌트를 이렇게 설명한다   
-```  화면에 비춰지는 뷰의 단위를 쪼개어 재활용이 가능한 형태로 관리하는 것, Vue은 재사용이 가능한 컴포넌트로 웹페이지를 구성할 수 있다  ```   
+```  컴포넌트는 화면에 비춰지는 뷰의 단위를 쪼개어 재활용이 가능한 형태로 관리하는 것, Vue은 재사용이 가능한 컴포넌트로 웹페이지를 구성할 수 있다  ```   
+
+
+2. Vue.js는 '데이터와 뷰(view) 를 연결해 주는 역할'로 설명해 보자   
+- 위의 이미지를 이렇게도 해석해 볼수 있다. 여기서의 모델(model)를 <U>Vue 안에 들어가는 데이터로</U> View를 <U> html에서 표시되는 요소</U>로 그리고 중간에 ViewModel이라는 것이 있다. 
+
