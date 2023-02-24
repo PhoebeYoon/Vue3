@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script
-    <title>Learning Vue</title>
+    <title></title>
 </head>
 <body>
     <div id="app">
@@ -40,3 +40,25 @@ var app = new Vue(
 코드를 살펴보자.   
 <img width="790" alt="스크린샷 2023-02-24 오후 3 00 33" src="https://user-images.githubusercontent.com/48478079/221104253-df3c24fa-9244-42ab-8cc5-14a9f78564cf.png">
 
+index.html 로 저장   
+```html
+<body>
+    <div id="demo">
+        {{ message }}
+    </div>
+    <script src="app1.js"></script>
+</body>
+
+```
+
+아래의 코드는 app1.js로 저장한다
+```javascript
+var app = new Vue(
+    {
+        el:'#demo',
+        data:{
+            message:'id=demo 로'
+        }
+    }
+)
+```
