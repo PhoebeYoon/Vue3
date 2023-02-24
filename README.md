@@ -1,4 +1,5 @@
-# Vue3
+# Vue3 Lesson 를 위해 
+## Vue3 & mySql  
 
 #### 사용할 에디터 :  vs code
   - html 파일생성시에 기본  lang="en" 아닌 lang='ko' 로 바꾸자
