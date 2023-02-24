@@ -40,6 +40,7 @@ var app = new Vue(
 코드를 살펴보자.   
 <img width="790" alt="스크린샷 2023-02-24 오후 3 00 33" src="https://user-images.githubusercontent.com/48478079/221104253-df3c24fa-9244-42ab-8cc5-14a9f78564cf.png">
 
+이제 코드를 조금 바꿔서 사용해보자.   
 index.html 로 저장   
 ```html
 <body>
