@@ -1,4 +1,4 @@
-# Vue3 Lesson 를 위해 
+## Vue란 무엇인가  
 
 1. Vue란 
 
@@ -16,6 +16,6 @@
 여기서 좀더 검색을 해보면  
 
 <img width="530" alt="스크린샷 2023-02-24 오후 1 10 26" src="https://user-images.githubusercontent.com/48478079/221089832-9f117c4d-03c3-41b7-9913-400e706107d2.png">   
-_출처 : https://wikidocs.net/17701 _        
+_출처 https://wikidocs.net/17701 _          
 
 이런 이미지를 찾을 수 있다 이걸 보면 조금 더 이해가 되는듯하다   
