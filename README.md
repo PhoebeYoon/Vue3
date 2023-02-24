@@ -63,10 +63,3 @@ app.mount(document.body.firstChild)
 
 ```
 
-
-app.unmount()   
-app.provide()
-app.component()   
-app.directive()
-app.use()
-
