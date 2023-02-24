@@ -49,3 +49,9 @@ Vue.createApp({
             }
         }).mount('nav');
 ```
+그리고 li태그 부분을 아래와 같이 수정한다 
+```html
+<li class="nav-item"> <a href="#" class="nav-link">{{links[0]}}</a></li>
+<li class="nav-item"> <a href="#" class="nav-link">{{links[0]}}</a></li>
+<li class="nav-item"> <a href="#" class="nav-link">{{links[0]}}</a></li>
+```
