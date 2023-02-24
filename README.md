@@ -34,9 +34,9 @@
       </body>
       </html>
 ```
-```html
+```javascript
 <!-- app.js -->
-빈상태로  저장 
+console.log('welome to vue world')
 ```
 
 
