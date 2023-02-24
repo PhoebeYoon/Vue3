@@ -13,7 +13,9 @@
 
 ><b>모델</b> -  이 단어 또한 검색해도 정확한 검색이 되지 않는듯 보인다. 그래서 영어로 검색 (What is a model in vue ) 라고 하면 ``` Vue v-model is a directive that creates a two-way data binding between a value in our template and a value in our data properties``` 이라고 나온다. 즉 Vue v-model은 템플릿의 값과 데이터 속성의 값 사이에 양방향 데이터 바인딩을 생성하는 지침이다 뭐 이런 뜻이다 그럼 우리는 모델이라는 것은 v-model이라는 것과 깊은 관련이 있다는 정도로 이해하자.   
 
+여기서 좀더 검색을 해보면  
 
+<img width="530" alt="스크린샷 2023-02-24 오후 1 10 26" src="https://user-images.githubusercontent.com/48478079/221089832-9f117c4d-03c3-41b7-9913-400e706107d2.png">   
+_출처 : https://wikidocs.net/17701 _        
 
-
-
+이런 이미지를 찾을 수 있다 이걸 보면 조금 더 이해가 되는듯하다   
