@@ -11,7 +11,9 @@
 - 뷰(view) : 앱안에 들어가는 각 화면의 구성요소를 말하는 것이고   
 - 구성요소를 영어로 'component'로 사용해서 헷갈리지 않게 정리하자. 그럼 구성요소란 component(컴포넌트)라는 것을 사용한다는 의미이다 
 
-> 모델 -  
+> 모델 -  이 단어 또한 검색해도 정확한 검색이 되지 않는듯 보인다. 그래서 영어로 검색 (What is a model in vue ) 라고 하면 ``` Vue v-model is a directive that creates a two-way data binding between a value in our template and a value in our data properties``` 이라고 나온다. 즉 Vue v-model은 템플릿의 값과 데이터 속성의 값 사이에 양방향 데이터 바인딩을 생성하는 지침이다 뭐 이런 뜻이다 그럼 우리는 모델이라는 것은 v-model이라는 것과 깊은 관련이 있다는 정도로 이해하자.   
+
+
 
 
 
