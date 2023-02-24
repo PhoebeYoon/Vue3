@@ -1,5 +1,5 @@
 ## Using the Global Build
-#### Lesson 02
+#### 여기에서는 Vue가 사용하는 몇개의 API를 살펴보는 것이 목적이다
 ```html
  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
