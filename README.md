@@ -1,43 +1,17 @@
 # Vue3 Lesson 를 위해 
-## Vue3 & mySql  
 
-#### 첫번째 시도는 이렇게 해보자.
-1 . 사용할 에디터 :  vs code
-  - html 파일생성시에 기본  lang="en" 아닌 lang='ko' 로 바꾸자
-  - vscode > setting(설정) > 검색창 : emmet 엔터 > 스크롤다운해서 아래쪽으로 >   
-    <b> Emmet:Variables </b> 찾기 > 항목 : lang : 값: ko 변경하면 끝
-  - vscode 실행하고 >  파일이름.html 만들고 > 나타나는 화면에서 '<b>doc</b>' 엔터 하면 기본코드가 쭈~욱 나옵니다   
-  - voscode 의 확장기능 중 Live Server , Vetur(_코드별로 하이라이트가 됩니다, 하지만 없어도 무방_)를 설치하면 편해요   
-<img width="190" alt="스크린샷 2023-02-24 오전 10 06 23" src="https://user-images.githubusercontent.com/48478079/221066923-e4dea5f0-f6b1-4a08-bb5b-d5ed3bc95f85.png"> <img width="190" alt="스크린샷 2023-02-24 오전 10 06 42" src="https://user-images.githubusercontent.com/48478079/221066936-82e1d9d9-0047-4a21-87c6-a960cb269f91.png"> <img width="210" alt="스크린샷 2023-02-24 오전 10 06 01" src="https://user-images.githubusercontent.com/48478079/221066951-3ac96bc4-ef98-442b-be27-250d74e9a495.png">
+1. Vue란 
 
-2.  vue.js 를 html 페이지에 삽입하기
-  - ``` https://developer.mozilla.org/ko/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Vue_getting_started  사이트로 방문 ```
-  - CDN 방식으로 가져오기(개발용):    
-     ``` <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>``` 를 html 페이지에 복사붙여넣기한다. 혹 npm 에 대한 경험이 있다면, 
-     ``` npm install --global @vue/cli   ``` 시도해 보자  
-3. 크롬 브라우저를 실행하고 확장프로그램에 <b> Vue Devtools</b> 를 설치해 보자.  
-    
-4. 
-```html
- <!-- index.html -->
-      <html lang="ko">
-      <head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-          <title>Learning Vue</title>
-      </head>
-      <body>
-          <h1>Hello Vue world</h1>
-          <script src="app.js"></script>
-      </body>
-      </html>
-```
-```javascript
-<!-- app.js -->
-console.log('welome to vue world')
-```
-5. 크롬 브라우저에서 개발자도구를 열고 console 창을 확인해 보자  -끝-
+뷰(Vue)는 사용자 인터페이스를 구축하기 위한 자바스크립트 프레임워크이다. 표준 html, css, javascript를 기반으로 구축되며 사용자 인터페이스를 효율적으로 개발할 수 있도록 도와주는 __선언적이고__  __구성요소__ 기반의 프로그래밍 __모델__ 을 제공한다. vue의 공식문서에는 이렇게 뷰를 설명하고 있다. 여기서 3개의 용어에 대해 이해해 보자
+> <b>선언적</b> -  여기서 선언적이라는 것은 선언적 랜더링을 한다는 의미로, 이것은 뷰가 자바스크립트를 기반으로 hmtl 문서를 출력할때 템플릿 구문을  사용한다는 뜻이다. ```템플릿이란 워드프로세서에서 사용된 용어인데, 이미 일부 세부정보가 있는 샘플문서를 말한다. ```   
+그러니 여기서 우리는 Vue가 뭔가를 미리 만들어놓고 그것을 마치 정해진 양식처럼 가져와 사용한다는 것을 짐작할 수 있다   
 
-:cactus: ``` https://vuejs.org/examples/ ```  방문하면 vue로 작성된 샘플들을 볼 수 있다
+><b>구성요소</b> - '뷰의 구성요소' 로 구글에서 검색을 하면 많은 내용이 나오지만 읽어봐도 무슨 소리인지, 그걸 이해하려면 또 다시 다른 단어를 검색해야 하고... 이것은 설명을 못해서가 아니라, 한마디로 정의하기가 어렵고 여러요소들이 복잡적으로 작동하기 때문일것이다.  
+그래서 일단 <u>뷰(view)</u> 와 <u>뷰(Vue)</u>를 구분하고,   
+-뷰(view) : 앱안에 들어가는 각 화면의 구성요소를 말하는 것이고   
+-구성요소를 영어로 'component'로 사용해서 헷갈리지 않게 정리하고, 그럼 구성요소란 즉 component(컴포넌트)를 사용한다는 뜻이로 일단 생각하자. 
+
+> 모델 -  
+
+
+
