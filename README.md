@@ -47,16 +47,16 @@ data:() => ({ 데이터를 넣어주세요 })
 ```
 
 ```html
+# 데이터를 있는 그대로 표시하기  
   <h1>Hello, Vue :)</h1>
-  <div id="app">
+
+<div id="app">
     {{ count}}
   </div>
 <script>
 new Vue({
     el: "#app",
-	data: {
-		count:0
-	}
+	data: { count:0 }
    })
 </script>
 ```
