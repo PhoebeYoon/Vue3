@@ -50,3 +50,10 @@
 ```
 정상적으로 출력되는것처럼 보이지만 개발자도구를 보면,  <b>link.url </b>가 'home.html' 바뀌지 않은 것을 볼수있다.   
 <img width="422" alt="스크린샷 2023-02-25 오후 1 50 01" src="https://user-images.githubusercontent.com/48478079/221338934-c9068610-92c4-4e1d-8fdd-615196b0aca1.png">
+
+ ```html
+  <a v-bind:href="link.url" class="nav-link">{{ link.text }} </a> 
+  ``` 
+ v-bind를 삽입하고 {{ }}는 빼고  v-bind:href="link.url" 수정한다  
+    
+    
