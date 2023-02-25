@@ -75,6 +75,6 @@
 </body>
 ```
 
-'strike-through': isON 에서 inON이 true / false 를 적용한 뒤 변경내용을 확인해보자
+'strike-through': isON 에서 inON이 true / false 를 적용한 뒤 변경내용을 확인해보자.  
 Vue에서 사용하는 방법이니 잘 익혀둡시다
 
