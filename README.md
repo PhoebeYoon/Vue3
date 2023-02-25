@@ -1,6 +1,6 @@
 # 정리하고 javascript표현
 
-## Vue 인스턴스 만들기
+## 1. Vue 인스턴스 만들기
 
 ```
 new Vue({ vue인스턴스 내용}
@@ -45,7 +45,7 @@ data () {
 //ES6 문법
 data:() => ({ 데이터를 넣어주세요 })
 ```
-#### 데이터를 있는 그대로 표시하기 
+## 2. 데이터를 있는 그대로 표시하기 
 ```html
 <h1>Hello, Vue :)</h1>
 
@@ -61,7 +61,7 @@ new Vue({
 </script>
 ```
 
-#### javascript 표현식으로 
+## 3. javascript 표현식으로 
 ```html
   <h1>Hello, Vue :)</h1>
   <div id="app">
