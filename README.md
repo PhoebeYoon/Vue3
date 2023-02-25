@@ -151,3 +151,25 @@ Vue.createApp({
 </script>
 </body>
 ```
+
+##### 이번 수업의 마지막으로 아래의 내용과 위의 내용을 비교하여 다른 곳을 찾아보세요
+```html
+<body>
+    <h1>Vue Template</h1>
+    <div id="app">
+            <p>{{title}} - {{author}} -{{pages}}</p>
+    </div>
+<script>
+const appName = Vue.createApp({
+        data(){
+            return {
+                title :'The Load of Rings',
+                author :'J. R. R. 톨킨',
+                pages : '3권짜리 1볼륨'
+            }
+        }
+   })
+   appName.mount('#app')
+</script>
+</body>
+```
