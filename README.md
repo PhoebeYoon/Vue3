@@ -1,4 +1,4 @@
-# 정리
+# 정리하고 javascript표현
 
 ## Vue 인스턴스 만들기
 
@@ -62,3 +62,23 @@ new Vue({
 </script>
 ```
 
+#### javascript 표현식으로 
+```html
+  <h1>Hello, Vue :)</h1>
+  <div id="app">
+    {{ count+1}} <br>
+    {{ count >=0 ? 'yes': 'no'}} <br>
+    {{ message.toUpperCase().split("")}}
+
+  </div>
+<script>
+   new Vue({
+    el: "#app",
+	data: {
+		count:0,
+        message:'Leaning Vue3'
+	}
+   })
+</script>
+
+```
