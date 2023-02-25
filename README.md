@@ -54,7 +54,10 @@
  ```html
   <a v-bind:href="link.url" class="nav-link">{{ link.text }} </a> 
   ``` 
- v-bind를 삽입하고 {{ }}는 빼고 v-bind:href="link.url" 수정하면 결과가 정상적으로 나온다. 어플리케이션에서 html속성을 사용하겠다는 의미로 <b>v-bind:</b>를 적고 속성을 적어준다. 그리고 <b>속성의 값은 자바스크립트표현식 </b>이 와야하기 때문에 {{ }} 는 없애준다.   
+ v-bind를 삽입하고 {{ }}는 빼고 v-bind:href="link.url" 수정하면 결과가 정상적으로 나온다. 어플리케이션에서 html속성을 사용하겠다는 의미로 <b>v-bind:</b>를 적고 속성을 적어준다. 그리고 <b>속성의 값은 자바스크립트표현식 </b>이 와야하기 때문에 {{ }} 는 없애준다. v-bind는 굉장히 많이 사용하는 속성익 때문에 v-bind: 를 간단히 : 으로 대치해서
     
-    
+ ```html
+  <a :href="link.url" class="nav-link">{{ link.text }} </a> 
+  ``` 
+  이렇게 적는다
     
