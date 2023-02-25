@@ -67,7 +67,7 @@
  </li>   
   ``` 
   
- <img width="529" alt="스크린샷 2023-02-25 오후 2 20 10" src="https://user-images.githubusercontent.com/48478079/221340034-2fe50e28-675e-4ab7-b828-49385db9a2be.png">
+ <img width="629" alt="스크린샷 2023-02-25 오후 2 20 10" src="https://user-images.githubusercontent.com/48478079/221340034-2fe50e28-675e-4ab7-b828-49385db9a2be.png">
 
  
  
