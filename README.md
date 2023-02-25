@@ -65,5 +65,27 @@
     })
 </script>
 ```
+### $data : 데이터의 내부를 확인하고자 할때
+```html
+<body>
+<h2>데이터의 내부를 확인할때</h2>
+<div id="app">
+    {{ $data }}
+</div>
+<script>
+    new Vue({
+        el:'#app' ,
+        data: {
+            myText : 'Hello',
+            Number:1234,
+            myBoolean : true,
+            myArr :[1,2,3,4]
 
+        }
+    })
+</script>
+</body>
+```
+결과는 data:{ } 에 정의된 모든 내용이 화면에 출력됩니다.   
+<img width="440" alt="스크린샷 2023-02-25 오후 8 53 33" src="https://user-images.githubusercontent.com/48478079/221355444-ca1c4be3-59ce-4d2e-a509-6cd837708da2.png">
 
