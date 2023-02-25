@@ -2,7 +2,7 @@
 
 ```html
 <ul class="foo">
-    <li class="bar" v-bind:style="insertStyle1" >This is red text {{ msg1}}</li>
+    <li class="bar" v-bind:style="insertStyle1">This is red text {{ msg1 }}</li>
     <li class="foo" v-bind:style="insertStyle2">This text is blue {{ msg2 }}</li>
 </ul>
 
