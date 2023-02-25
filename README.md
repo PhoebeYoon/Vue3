@@ -128,6 +128,26 @@ template를 사용해서 결과를 얻었다. 하지만 template를 사용하면
         }
    }).mount('#app');
 </script>
-
 ```
    
+    
+```html
+    
+    <body>
+    <h1>Vue Template</h1>
+    <div id="app">
+            <p>{{title}} - {{author}} -{{pages}}</p>
+    </div>
+<script>
+Vue.createApp({
+        data(){
+            return {
+                title :'The Load of Rings',
+                author :'J. R. R. 톨킨',
+                pages : '3권짜리 1볼륨'
+            }
+        }
+   }).mount('#app');
+</script>
+</body>
+```
