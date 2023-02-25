@@ -7,41 +7,35 @@
 ### 인라인 방식으로 속성지정하기 (href, src, text-align, color, font-size, background-color)
 ```html
 <div id="app">
-    <img src="./img/face1.png" >
-    <img v-bind:src="fileName">
-    <br><br>
-    <a href="https://www.naver.com">직접 네이버가기</a> 
-    <a v-bind:href="urllink1">v-bind로 지정</a>
-    <a :href="urllink1">v-bind 숏으로 지정</a>
-    <br> <br>
-    <p style="text-align:right">오른쪽정렬</p>
-    <p v-bind:style="txtAlign">오른쪽정렬</p>
-    <p style="color:red">글자</p>
-    <p v-bind:style="txtColor">글자</p>
-
-    <p style="font-size:20px">글자크기</p>
-    <p v-bind:style="font1">글자크기</p>
-    <p :style="font2">글자크기</p>
-
-    <p style="background-color: deeppink;">배경색상</p>
-    <p v-bind:style="bg1">배경색상</p>
-    <p :style="bg2">배경색상</p>
-    
+	<p><a v-bind:href="naver_link">네이버로 연결</a></p>
+	<p><img :src="face2_name">face2.png 표시</img></p>
+	<p :align="align_left">텍스트를 왼쪽 정렬</p>
+	<p :align="align_right">텍스트를 오른쪽 정렬</p>
+	<p :align="align_center">텍스트를 가운데 정렬</p>
+	<p v-bind:style="{ color: inline_font_red }">인라인 스타일로 글자색을 빨간색으로</p>
+	<p v-bind:style="{ color: inline_font_red, fontSize : inline_size_150 }">인라인 스타일로 글자크기를 150% 크게 빨간색으로</p>
+	<p :style="{ color: inline_font_red, fontSize : inline_size_150, backgroundColor : inline_background}">
+		인라인 스타일로 글자크기를 150% 크게 빨간색으로 배경은 노란색으로</p>
+	<p :class="blue_underline_class">blue-underline class 지정</p>
+	<p :class="[blue_underline_class, dark_class]">blue-underline, dark class 지정</p>
 </div>
 <script>
-    new Vue({
-        el:'#app',
-        data :{
-            fileName:'./img/face2.png',
-            urllink1 :'https://www.naver.com',
-            txtAlign: 'textAlign:right',
-            txtColor: 'color:blue',
-            font1 : 'fontSize  : 150%',
-            font2 : 'fontSize  : 150%',
-            bg1:'backgroundColor: deepskyblue',
-            bg2:'backgroundColor: orange'
-        }
-        });
+	new Vue({
+		el: '#app',
+		data: {
+			naver_link : 'https://naver.com',
+			face2_name : 'face2.png',
+			align_right : 'right',
+			align_left : 'left',
+			align_center : 'center',
+			inline_font_red : 'red',
+			inline_size_150 : '150%',
+			inline_background : 'yellow',
+			blue_underline_class : 'blue-underline',
+			strike_through_class : 'strike-through',
+			dark_class : 'dark',
+		}
+	})
 </script>
 </body>
 
