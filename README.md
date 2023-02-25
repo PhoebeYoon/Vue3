@@ -39,22 +39,21 @@ new Vue({
 html로 표시하고자 할때 사용한다
 ```
 ```html
-	<body>
-		<h2>HTML로 표시하는 예제</h2>
-		<div id="app">
-			<p>{{ myText }}</p>
-			<p v-text="myText"></p>
-			<p v-html="myText"></p>
-		</div>
-
-		<script>
-			new Vue({
-				el: '#app',
-				data: {
-					myText:'<h1>Hello!!!</h1>'
-				}
-			})
-		</script>
-	</body>
+<body>
+  <h2>HTML로 표시하는 예제</h2>
+	<div id="app">
+		<p>{{ myText }}</p>
+		<p v-text="myText"></p>
+		<p v-html="myText"></p>
+	</div>
+<script>
+	new Vue({
+	el: '#app',
+	data: {
+	myText:'<h1>Hello!!!</h1>'
+	}
+	})
+</script>
+</body>
 ```
 
