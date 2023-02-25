@@ -1,0 +1,28 @@
+
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+    <h1>Vue Template</h1>
+    <div id="app">
+            <p>{{title}} - {{author}} -{{pages}}</p>
+    </div>
+<script>
+Vue.createApp({
+        data(){
+            return {
+                title :'The Load of Rings',
+                author :'J. R. R. 톨킨',
+                pages : '3권짜리 1볼륨'
+            }
+        }
+   }).mount('#app');
+</script>
+</body>
+</html>
+
