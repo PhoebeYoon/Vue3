@@ -28,3 +28,42 @@
 
 ```
 
+```html
+<h2>데이터형 연습</h2>
+<div id="app">
+    <p>{{myTea}}</p>
+    <p>{{myTea[1].name}} : {{myTea[1].price}}</p>
+</div>
+<script>
+    new Vue({
+        el:'#app' ,
+        data: {
+            myTea: [
+            {name : '다즐링', price: 4000},
+            {name: '얼그레이' , price:4500 },
+            {name: '카페라떼' , price:3500 }
+            ]
+        }
+
+    })
+</script>
+```
+
+위의 예제에서 javascript 부분만 아래와 같이 변경해보자.   
+```javascript
+<script>
+    var teaList = [
+        {name : '다즐링', price: 4000},
+        {name: '얼그레이' , price:4500 },
+        {name: '카페라떼' , price:3500 }
+    ]
+    new Vue({
+        el:'#app' ,
+        data: {
+            myTea: teaList
+        }
+    })
+</script>
+```
+
+
