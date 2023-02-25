@@ -59,5 +59,15 @@
  ```html
   <a :href="link.url" class="nav-link">{{ link.text }} </a> 
   ``` 
-  이렇게 적는다
-    
+  이렇게 적는다  
+  이제 조금더 내용을 바꿔보자.  
+ ```html
+  <li v-for="link in links" class="nav-item">
+  <a class="nav-link"  :href="link.url"  :title="`This 페이지는 ${link.url}로 이동`">{{ link.text }} </a>
+ </li>   
+  ``` 
+  
+ <img width="529" alt="스크린샷 2023-02-25 오후 2 20 10" src="https://user-images.githubusercontent.com/48478079/221340034-2fe50e28-675e-4ab7-b828-49385db9a2be.png">
+
+ 
+ 
