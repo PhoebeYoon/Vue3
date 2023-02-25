@@ -54,6 +54,7 @@
  ```html
   <a v-bind:href="link.url" class="nav-link">{{ link.text }} </a> 
   ``` 
- v-bind를 삽입하고 {{ }}는 빼고  v-bind:href="link.url" 수정한다  
+ v-bind를 삽입하고 {{ }}는 빼고  v-bind:href="link.url" 수정하면 결과가 정상적으로 나온다.  
+    
     
     
