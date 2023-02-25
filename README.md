@@ -33,6 +33,7 @@ new Vue({
 })
 
 ```
+
 또한, 아래의 data(){ } 와 data:()=>{ } 는 모두 사용가능하다. 
 
 ```
@@ -45,6 +46,18 @@ data () {
 data:() => ({ 데이터를 넣어주세요 })
 ```
 
-
-
+```html
+  <h1>Hello, Vue :)</h1>
+  <div id="app">
+    {{ count}}
+  </div>
+<script>
+new Vue({
+    el: "#app",
+	data: {
+		count:0
+	}
+   })
+</script>
+```
 
