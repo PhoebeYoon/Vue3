@@ -169,7 +169,7 @@ const appName = Vue.createApp({
             }
         }
    })
-   appName.mount('#app')
+appName.mount('#app')
 </script>
 </body>
 ```
