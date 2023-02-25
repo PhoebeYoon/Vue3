@@ -92,7 +92,18 @@ return {
     - 수식어 : 수식어는 (.)점으로 표시되는 특수접미사로 디렉티브를 특별한 방법으로 바인딩한다. 에) 'v-on:submit.prevent:"onSubmit" '
 
 
-
+##### html 태그사용
+```html
+<body>
+    <h1>Vue Template</h1>
+    <div id="app"></div>
+<script>
+   const app = Vue.createApp({
+     template :'<h2> I am Vue template </h2>'
+   }).mount('#app');
+</script>
+</body>
+```
 
 
 
