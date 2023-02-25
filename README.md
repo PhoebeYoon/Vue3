@@ -104,6 +104,6 @@ return {
 </script>
 </body>
 ```
-
-
+크롬 브라우저에서 '개발자도구'를 열어보면, 아래와 같고, <div id="app" data-v-app> 보인다. Vue의 앱이라는 뜻이다. 
+<img width="330" alt="스크린샷 2023-02-25 오후 12 49 46" src="https://user-images.githubusercontent.com/48478079/221334657-a8b9f7c2-eddd-441b-ae22-46ac8a1a618d.png">
 
