@@ -4,7 +4,7 @@
 <a v-bind:href="url">
 <a :href="url">
 ```
-### href, src, text-align, color, font-size, background-color,
+### 인라인 방식으로 속성지정하기 (href, src, text-align, color, font-size, background-color)
 ```html
 <div id="app">
     <img src="./img/face1.png" >
@@ -46,7 +46,7 @@
 </body>
 
 ```
-
+### 클래스로 속성지정하기 
 ```html
 <h2>클래스 지정 예제</h2>
 <style>
