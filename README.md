@@ -43,7 +43,10 @@
     </script>
 
 ```
-
-
-
-(lesson05 에서 사용했던 예제를 가져와 수정한다)
+(lesson05 에서 사용했던 예제를 가져와 수정한다).  
+위의 내용이 작동되는지 확인한 후에 <a>태그 부분만 아래처럼 수정해보자.   
+``` html 
+<a href="{{link.url}}" class="nav-link">{{ link.text }} </a>
+```
+정상적으로 출력되는것처럼 보이지만 개발자도구를 보면,  <b>link.url </b>가 'home.html' 바뀌지 않은 것을 볼수있다.   
+<img width="422" alt="스크린샷 2023-02-25 오후 1 50 01" src="https://user-images.githubusercontent.com/48478079/221338934-c9068610-92c4-4e1d-8fdd-615196b0aca1.png">
