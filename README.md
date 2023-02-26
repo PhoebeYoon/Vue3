@@ -41,8 +41,8 @@ methods에서 data 에 선언된 변수를 가져와 사용하려면 this 키워
   <button  :disabled="false"  v-on:click="btn"> LIKE </button>
 </div>
 <script>
-function good(){
-  alert("good 함수 실행");
+function myF(){
+  alert("myF 함수 실행");
 }
 Vue.createApp({
 data(){ 
@@ -51,7 +51,7 @@ data(){
 methods:{
   btn:function(){
     //console.log('버튼작동확인')
-    good();
+    myF();
   }
 }
 }).mount('#app')
@@ -66,7 +66,7 @@ methods:{
   <button value="good" v-bind:disabled="isClick" @click="btn">LIKE</button>
 </div>
 <script>
-function good(){
+function myF(){
   alert("Liked");
 }
 Vue.createApp({
@@ -76,7 +76,7 @@ data(){
 methods:{
   btn:function(){
      this.isClick=true;
-     good()
+     myF()
   }
 }
 }).mount('#app')
