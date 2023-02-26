@@ -33,3 +33,54 @@ methods:{
 ```
 methods에서 data 에 선언된 변수를 가져와 사용하려면 this 키워드를 붙여줘야 합니다
 
+
+### 다른 함수를 부름
+```html
+<h2> v-on 디렉티브</h2>
+<div id="app">
+  <button  :disabled="false"  v-on:click="btn"> LIKE </button>
+</div>
+<script>
+function good(){
+  alert("good 함수 실행");
+}
+Vue.createApp({
+data(){ 
+      return { } 
+  },
+methods:{
+  btn:function(){
+    //console.log('버튼작동확인')
+    good();
+  }
+}
+}).mount('#app')
+</script>
+
+```
+
+### 한번 클릭하고 두번은 클릭할 수 없게 하는 예제
+```html
+<h2> v-on 디렉티브</h2>
+<div id="app">
+  <button value="good" v-bind:disabled="isClick" @click="btn">LIKE</button>
+</div>
+<script>
+function good(){
+  alert("Liked");
+}
+Vue.createApp({
+data(){ 
+      return { isClick : false} 
+  },
+methods:{
+  btn:function(){
+     this.isClick=true;
+     good()
+  }
+}
+}).mount('#app')
+</script>
+
+```
+
