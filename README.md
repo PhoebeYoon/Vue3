@@ -139,11 +139,11 @@
   <title>Vue.js sample</title>
   <script src="https://unpkg.com/vue@3.0.0"></script>
 <style>
-  table { width: 100%; text-align: left;}
-  table th { padding: 12px;
-    border-bottom: 2px solid darkgray }
-  table td { padding: 12px;}
-  table tr:nth-of-type(even) { background-color: rgba(0, 0, 255, 0.1); }
+  table { width: 100%; text-align: left; border-collapse: collapse;}
+  table th { padding: 10px; text-align: center;
+    border-bottom: 1px solid darkgray }
+  table td { padding: 10px;}
+  table tr:nth-of-type(even) { background-color: rgba(0, 100, 255, 0.1); }
 </style>
 </head>
 <body>
