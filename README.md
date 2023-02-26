@@ -94,5 +94,24 @@ data() { return {
 - 위의 코드에서 isShown ==false 일때 결과   
 <img width="360" alt="스크린샷 2023-02-26 오후 4 49 41" src="https://user-images.githubusercontent.com/48478079/221398731-f38efb4c-c51b-49fc-88ce-bd10a55218c3.png">
 
+```html
+<div id="app">
+  <p v-show="isShown==true">A</p>
+  <p v-if="true">B</p>
+</div>
+<script>
+Vue.createApp({
+data() { return { 
+  isShown :false
+} } }).mount('#app')
+</script>
+```
+- v-show 와 v-if 의 사용 비교를 살펴보자 
+<img width="341" alt="스크린샷 2023-02-26 오후 4 56 39" src="https://user-images.githubusercontent.com/48478079/221398992-887cceb8-39f4-4147-aa06-6fe8c73fa42f.png">
 
 
+<img width="276" alt="스크린샷 2023-02-26 오후 4 57 10" src="https://user-images.githubusercontent.com/48478079/221398980-2b62fb72-0a9a-4dbc-a565-c7a66ebfd5d5.png">
+
+위의 2가지 경우에서 v-if 의 조건이 false 일때는 브라우저의 엘리먼트탭에 아예 보이질 않습니다.
+그러나 v-show 는 조건이 false일지라도 브라우저의 엘리먼트탭에는 나오지만 단지 브라우저의 표시되질 않습니다.  
+이것을 다른말로 하자면, v-show는 style="display:none" 으로 처리되고, v-if가 false 일때는 랜더링이 되질 않는것이다. 
