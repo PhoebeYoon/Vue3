@@ -74,7 +74,7 @@ new Vue({
    new Vue({
     el: "#app",
 	data: {
-		count:0,
+	count:0,
         message:'Leaning Vue3'
 	}
    })
