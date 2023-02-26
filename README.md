@@ -94,6 +94,11 @@ return {
 
 ##### html 태그사용
 ```html
+
+<head>
+ <meta charset="UTF-8">
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
 <body>
     <h1>Vue Template</h1>
     <div id="app"></div>
