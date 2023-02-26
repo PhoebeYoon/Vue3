@@ -97,7 +97,7 @@ data() { return {
 ```html
 <div id="app">
   <p v-show="isShown==true">A</p>
-  <p v-if="true">B</p>
+  <p v-if="false">B</p>
 </div>
 <script>
 Vue.createApp({
