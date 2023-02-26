@@ -97,5 +97,6 @@ data(){
 </script>
 
 ```
+<img width="180" alt="스크린샷 2023-02-26 오후 9 59 15" src="https://user-images.githubusercontent.com/48478079/221411890-02377b03-25f3-4270-a1eb-151389026a23.png">
 
 
