@@ -17,3 +17,21 @@
 ```
 <input v-on:keyup.키수식자="메소드명">
 ```
+```html
+<h2> v-on 디렉티브 / 키수식자</h2>
+<div id="app">
+  <input v-on:keyup.enter="showAlert" type="text">
+</div>
+<script>
+Vue.createApp({
+data(){ 
+      return { } 
+  },
+methods:{
+  showAlert:function(){
+    alert("Enter키를 눌렀습니다")
+  }
+}
+}).mount('#app')
+</script>
+```
