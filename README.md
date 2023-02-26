@@ -94,3 +94,27 @@ methods:{
   }
 }
 ```
+아래의 예제에서 실행되는 메소드는 countUp 뿐이다. 그러므로 1씩, 3씩, 10씩 증가하기 위해서는 증가하는 값를 파라미터로 전달해야 한다.  
+```html
+<h2> v-on 디렉티브</h2>
+<div id="app">
+ <p>{{ count }}</p>
+ <button v-on:click="countUp(1)">1씩증가</button>
+ <button @click="countUp(3)">3씩증가</button>
+ <button v-on:click="countUp(10)">10씩증가</button>
+</div>
+<script>
+
+Vue.createApp({
+data(){ 
+      return { count:0} 
+  },
+methods:{
+  countUp:function(value){
+    this.count +=value;
+  }
+}
+}).mount('#app')
+</script>
+
+```
