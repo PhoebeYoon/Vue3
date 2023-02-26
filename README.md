@@ -25,4 +25,25 @@ data(){
   }
 })
 ```
-또한 data: 와 data()가 자바스크립트의 es5버전과 es6버전의 차이라는 것도 알아봤다
+또한 data: 와 data()가 자바스크립트의 es5버전과 es6버전의 차이라는 것도 알아봤다. vue는 자바스크립트 프레임워크이기 때문에 자바스크립트의 문법이 적용된다.  
+여기서 우리가 알고 싶은 내용 중 중요한 것 하나는, 위의 두개의 문법이 모두 잘 작동하지만,  이따금 '~ Vue is not a constructor ~' 오류가 뜬다는 것이다. 왜 그럴까?   
+
+이것은 Vue 라이브러리를 가져와 코드를 해석하는 방식인, CDN 방식과 Vue3, Vue2의 차이 때문이다.  
+예를 들면,
+위에 있는 Vue3 방식대로 Vue 인스턴스를 생성했다고 가정하자. 아래의 코드처럼 작성하면,   
+```html
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+<div id="app">  {{ msg }}</div>
+<script>
+new Vue({
+  el: '#app',   
+  data: { msg :'작동완료' }
+	})
+		</script>
+``` 
+Vue생성자를 사용한 것이며 cdn에서는 Vue 생성자를 지원하고 있으므로 코드를 정상적으로 내용을 출력한다.  
+이제, 위의 코드에서 생성자를 지원하지 않는   
+```<script src="https://unpkg.com/vue@3.0.0"></script> ``` 으로 바꾸어보자.   
+그러면, ```  Uncaught TypeError: Vue is not a constructor ``` 가 발생한다.  
+
+
