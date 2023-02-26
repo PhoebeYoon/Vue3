@@ -42,3 +42,36 @@ data() { return { } } }).mount('#app')
 </body>
 </html>
 ```
+
+#### 2. v-if 사용 예
+```html
+<div id="app">
+  <p v-if="isShow">Vue is beautiful - 1 </p>
+  <p v-else="isShow">Vue is beautiful - 2</p>
+</div>
+<script>
+Vue.createApp({
+data() { return { 
+  isShow:false
+} } }).mount('#app')
+</script>
+
+```
+
+```html
+<div id="app">
+  <p v-if="type=='A'">A</p>
+  <p v-else-if="type=='B'">B</p>
+  <p v-else>C</p>
+</div>
+<script>
+Vue.createApp({
+data() { return { 
+  // type:'A'
+  //  type:'B'
+  type:'Z'
+} } }).mount('#app')
+</script>
+
+```
+
