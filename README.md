@@ -12,3 +12,33 @@
 <p v-else-if="조건2"> 조건1이 false 이고, 조건2가 ture 일때 표시하는 내용 </p>
 <p v-else > 우의 2개의 조건이 false일대 표시하는 내용 </p>
 ```
+
+### 1. v-if, v-if v-else, v-if v-else-if, v-else 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v-if 디렉티브</title>
+  <script src="https://unpkg.com/vue@3.0.0"></script>
+</head>
+<body>
+<div id="app">
+  <div v-if="true">Vue is awesome-true!</div>
+  <div v-if="false">Vue is awesome-false!</div>
+  <hr>
+  <div v-if="false">Vue is wonderful!-true</div>
+  <div v-else>Vue is wonderful - false</div>
+  <hr>
+  <div v-if="false">v-if</div>
+  <div v-else-if="true">v-else-if</div>
+  <div v-else>v-else</div>
+</div>
+<script>
+Vue.createApp({
+data() { return { } } }).mount('#app')
+</script>
+</body>
+</html>
+```
