@@ -45,5 +45,20 @@ Vue생성자를 사용한 것이며 cdn에서는 Vue 생성자를 지원하고 �
 이제, 위의 코드에서 생성자를 지원하지 않는   
 ```<script src="https://unpkg.com/vue@3.0.0"></script> ``` 으로 바꾸어보자.   
 그러면, ```  Uncaught TypeError: Vue is not a constructor ``` 가 발생한다.  
+그럼, vue3 라이브러리 맞게 내용을 번경해보자.   
+```html
+<script src="https://unpkg.com/vue@3.0.0"></script>
+<div id="app">  {{ msg }}</div>
+<script>
+    Vue.createApp({
+        data() {
+            return { 
+            msg:'작동 완료'
+            }
+        }
+    }).mount('#app')
+</script>
+```
+결과가 정상적으로 출력된것을 볼 수 있다. 
 
 
