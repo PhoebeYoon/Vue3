@@ -1,5 +1,5 @@
 :cactus: Vue3 Lesson 
-## v-if 디렉티브에 대해 알아보자. 
+## v-if 디렉티브에 , v-show 대해 알아보자. 
 조건에 따라 내용을 표시하거나 표시하지 않거나 합니다.
 
 ```
@@ -74,4 +74,17 @@ data() { return {
 </script>
 
 ```
+#### 3. v-show 사용 예
 
+
+```html
+<div id="app">
+  <p v-show="isShown==true">A</p>
+</div>
+<script>
+Vue.createApp({
+data() { return { 
+  isShown :true
+} } }).mount('#app')
+</script>
+```
