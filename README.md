@@ -27,6 +27,6 @@ divcal:function() { this.result = this.num1 / this.num2; }
 }
 }).mount("#app")
 </script>
-```
-결과는, 
+```  
+결과는,   
 <img width="300" alt="스크린샷 2023-02-26 오후 9 06 55" src="https://user-images.githubusercontent.com/48478079/221409533-31f371b1-b99a-4152-9a97-c8f699d032fe.png">
