@@ -72,7 +72,7 @@ new Vue({
   </div>
 <script>
    new Vue({
-    el: "#app",
+          el: "#app",
 	data: {
 	count:0,
         message:'Leaning Vue3'
