@@ -99,3 +99,33 @@
 </html>
 
 ```
+
+#### 3. 인덱스, 아이템 in [배열] 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js sample</title>
+  <script src="https://unpkg.com/vue@3.0.0"></script>
+</head>
+<body>
+  <h2>인덱스와 오브젝트  </h2>
+  <div id="app">
+  <ul> 
+    <li v-for="(item, index ) in myArray">{{ index }} : {{ item }}</li>
+  </ul>
+  </div>
+  <script>
+  Vue.createApp({
+    data() {
+      return {
+        myArray: ['크림빵','팥빵','크로와상','슈크림빵']
+      }
+    }
+  }).mount('#app')
+  </script>
+</body>
+</html>
+
+```
