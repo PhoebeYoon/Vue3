@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue :)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://unpkg.com/vue@3.0.0"></script>
+	</head>
+<body>
+<div id="app">
+  <input type="checkbox" value="red"   v-model="checking">
+  <input type="checkbox" value="green" v-model="checking">
+  <input type="checkbox" value="blue"  v-model="checking">
+  <div> 당신이 선택한 색상은 {{ checking }}</div>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { checking :[ ]}
+}
+}).mount("#app")
+</script>
+</body>
+</html>

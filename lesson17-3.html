@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue :)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://unpkg.com/vue@3.0.0"></script>
+	</head>
+<body>
+<div id="app">
+<input type="checkbox" v-model="checking">
+현재상태는 {{ checking }}
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { checking: true}
+}
+}).mount("#app")
+</script>
+</body>
+</html>
