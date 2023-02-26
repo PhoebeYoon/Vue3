@@ -85,4 +85,12 @@ methods:{
 ```
 ### 파라미터(parameter)를 전달하는 메소드
 
+```
+<button v-on:click="메소드(파라미터)">
 
+인스턴스안에서,
+methods:{
+  메소드명:function(파라미터) {
+  }
+}
+```
