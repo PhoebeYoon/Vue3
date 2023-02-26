@@ -17,6 +17,7 @@
 ```
 <input v-on:keyup.키수식자="메소드명">
 ```
+### enter 키를 사용
 ```html
 <h2> v-on 디렉티브 / 키수식자</h2>
 <div id="app">
@@ -34,4 +35,26 @@ methods:{
 }
 }).mount('#app')
 </script>
+```
+
+### shift + enter 키를 함께 사용 
+``` html
+<h2> v-on 디렉티브 / 키수식자</h2>
+<div id="app">
+  <input v-on:keyup.enter.shift="showAlert" type="text">
+  <p>{{ mytxt }}</p>
+</div>
+<script>
+Vue.createApp({
+data(){ 
+      return { mytxt :'텍스트상자를 클릭한 후 shift + enter를 함께 누르세요'} 
+  },
+methods:{
+  showAlert:function(){
+    alert("Shift키와 Enter키를 눌렀습니다")
+  }
+}
+}).mount('#app')
+</script>
+
 ```
