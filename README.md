@@ -57,3 +57,27 @@ data(){
 <img width="120" alt="스크린샷 2023-02-26 오후 9 42 43" src="https://user-images.githubusercontent.com/48478079/221411146-8458916a-539a-462f-a1f3-313c2b09ff86.png">
 
 <img width="120" alt="스크린샷 2023-02-26 오후 9 42 52" src="https://user-images.githubusercontent.com/48478079/221411151-0be7b82b-a572-411d-a37e-2090a63cb556.png">
+
+
+
+
+### checkbox의 값을 인스턴스의 테이터와 연결  
+````html
+<div id="app">
+  <input type="checkbox" value="red"   v-model="checking">
+  <input type="checkbox" value="green" v-model="checking">
+  <input type="checkbox" value="blue"  v-model="checking">
+  <div> 당신이 선택한 색상은 {{ checking }}</div>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { checking :[ ]}
+}
+}).mount("#app")
+</script>
+
+```  
+
+
+<img width="263" alt="스크린샷 2023-02-26 오후 9 50 36" src="https://user-images.githubusercontent.com/48478079/221411473-15d10290-5373-4bfd-b781-45f6f305b040.png">
