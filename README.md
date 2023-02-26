@@ -88,3 +88,10 @@ data() { return {
 } } }).mount('#app')
 </script>
 ```
+- 위의 코드에서 isShown ==true 일때 결과  
+<img width="260" alt="스크린샷 2023-02-26 오후 4 48 21" src="https://user-images.githubusercontent.com/48478079/221398652-9605ce93-d621-4657-9cd4-6dbeda0629f2.png">   
+- 위의 코드에서 isShown ==false 일때 결과   
+<img width="360" alt="스크린샷 2023-02-26 오후 4 49 41" src="https://user-images.githubusercontent.com/48478079/221398731-f38efb4c-c51b-49fc-88ce-bd10a55218c3.png">
+
+
+
