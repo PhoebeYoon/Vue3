@@ -7,7 +7,7 @@
 ```
 <태그명 v-model="프로퍼티명">
 ```
-
+### input 사용예
 ```html
 <div id="app">
   <input v-model="myName" placeholder="이름" type="text">
@@ -22,3 +22,38 @@ data(){
 </script>
 
 ```
+### textarea 사용예
+``` html
+<div id="app">
+ <textarea v-model="myText" id="" cols="30" rows="10"></textarea>
+ <p>문장은 {{ myText }}이고, </p>
+ <p>글자수는 {{ myText.length }} 자입니다 </p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { myText:'Have a good day!'}
+}
+}).mount("#app")
+</script>
+
+```
+
+### input type=checkobx 사용예
+```html
+<div id="app">
+<input type="checkbox" v-model="checking">
+현재상태는 {{ checking }}
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { checking: true}
+}
+}).mount("#app")
+</script>
+
+```
+<img width="120" alt="스크린샷 2023-02-26 오후 9 42 43" src="https://user-images.githubusercontent.com/48478079/221411146-8458916a-539a-462f-a1f3-313c2b09ff86.png">
+
+<img width="120" alt="스크린샷 2023-02-26 오후 9 42 52" src="https://user-images.githubusercontent.com/48478079/221411151-0be7b82b-a572-411d-a37e-2090a63cb556.png">
