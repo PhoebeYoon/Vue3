@@ -56,7 +56,7 @@ data:() => ({ 데이터를 넣어주세요 })
 <script>
 new Vue({
     el: "#app",
-	data: { count:0 }
+  data: { count:0 }
    })
 </script>
 ```
