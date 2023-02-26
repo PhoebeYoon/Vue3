@@ -5,6 +5,9 @@
 <a :href="url">
 ```
 ### 인라인 방식으로 속성지정하기 (href, src, text-align, color, font-size, background-color)
+블록태그에 :align="left (center, right)"
+
+
 ```html
 <div id="app">
 	<p><a v-bind:href="naver_link">네이버로 연결</a></p>
