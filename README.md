@@ -106,7 +106,8 @@ return {
    const app = Vue.createApp({
      template :'<h2> I am Vue template </h2>'
    }).mount('#app');
-</script>
+// 아래쪽의 버전을 주의하세요 를 읽어주세요
+    </script>
 </body>
 ```
 크롬 브라우저에서 '개발자도구'를 열어보면, 아래와 같고, <div id="app" data-v-app> 보인다. Vue의 앱이라는 뜻이다.    
@@ -178,3 +179,12 @@ appName.mount('#app')
 </script>
 </body>
 ```
+    
+### 🌵 버전을 주의하세요   
+위의 코드중에 아래와 같은 vue 연결코드를 보셨을텐데요 
+```
+ <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+ <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script> 
+```
+'html 태그사용'부분에서 특별히 script src를 언급한 이유는 vue2 라이브러리 소스를 더 이상 제공하지 않는 것들이 있기 때문입니다 그래서 혹시 특정한 버전의 라이브러리 소스를 가져다 사용할 경우에는 실제코드에 이상이 없는데도 작동하지 않을수 있다는 점 기억하세요
+    
