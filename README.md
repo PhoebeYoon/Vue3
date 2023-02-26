@@ -83,4 +83,6 @@ methods:{
 </script>
 
 ```
+### 파라미터(parameter)를 전달하는 메소드
+
 
