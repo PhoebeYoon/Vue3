@@ -7,11 +7,11 @@
 <div id="app">
   <p> <input v-model.number="num1">
   <input v-model.number="num2"> </p>
-  <button v-on:click="addcal">덧샘계산</button>
-  <button v-on:click="subcal">뺄샘계산</button>
-  <button v-on:click="multical">곱샘계산</button>
-  <button v-on:click="divcal">나눗샘계산</button>
-  <p>결과는 {{ result }} 입니다.</p>
+  <button v-on:click="addcal">덧셈</button>
+  <button v-on:click="subcal">뺄셈</button>
+  <button v-on:click="multical">곱셈</button>
+  <button v-on:click="divcal">나눗셈</button>
+  <p>계산결과는 {{ result }} 입니다.</p>
 </div>
 
 <script>
