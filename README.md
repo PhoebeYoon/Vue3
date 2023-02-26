@@ -70,3 +70,32 @@
 </html>
 
 ```
+#### 3. 변수 in 최대값 
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js sample</title>
+  <script src="https://unpkg.com/vue@3.0.0"></script>
+</head>
+
+<body>
+  <h2>구구단 5단 예제 </h2>
+  <div id="app">
+  <ul> 
+      <li v-for="n in 10"> 5 x {{n}} ={{ 5 * n}}</li>
+  </ul>
+  </div>
+  <script>
+  Vue.createApp({
+    data() {
+      return {
+      }
+    }
+  }).mount('#app')
+  </script>
+</body>
+</html>
+
+```
