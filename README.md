@@ -62,7 +62,7 @@ data(){
 
 
 ### checkbox의 값을 인스턴스의 테이터와 연결  
-````html
+```html
 <div id="app">
   <input type="checkbox" value="red"   v-model="checking">
   <input type="checkbox" value="green" v-model="checking">
@@ -78,6 +78,24 @@ data(){
 </script>
 
 ```  
+<img width="263" alt="스크린샷 2023-02-26 오후 9 50 36" src="https://user-images.githubusercontent.com/48478079/221411523-d5b78acd-823d-4d5b-9a08-bf468d3c7389.png">
+
+### 동의에 체크하면 버튼이 활성화되는 예
+``` html
+<div id="app">
+  <label>
+    <input type="checkbox" v-model="myAgree" >
+    동의합니다.</label>
+    <button v-bind:disabled="myAgree==false">동의하고 제출하기 </button>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { 	myAgree: false}
+}
+}).mount("#app")
+</script>
+
+```
 
 
-<img width="263" alt="스크린샷 2023-02-26 오후 9 50 36" src="https://user-images.githubusercontent.com/48478079/221411473-15d10290-5373-4bfd-b781-45f6f305b040.png">
