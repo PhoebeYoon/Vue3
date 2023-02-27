@@ -80,6 +80,9 @@ data(){
 ```  
 <img width="263" alt="스크린샷 2023-02-26 오후 9 50 36" src="https://user-images.githubusercontent.com/48478079/221411523-d5b78acd-823d-4d5b-9a08-bf468d3c7389.png">
 
+>논리연산자에서 조건설정에 주의하자. 'myAgree == false' 라고 지정했을때 false이면 *참(true)* 가 되고 true이면 *거깃(false)* 가 되는 것이다. 또한 이것을 ' !myAgree' 표현해도 같은 결과가 된다.  예) <button v-bind:disabled="!myAgree">동의하고 제출하기 </button>
+
+
 ### 동의에 체크하면 버튼이 활성화되는 예
 ``` html
 <div id="app">
