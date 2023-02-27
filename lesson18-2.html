@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue.js :)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://unpkg.com/vue@3.0.0"></script>
+	</head>
+<body>
+<div id="app">
+  <input type="radio" v-model="fileName" value='./img/cupcake.png'>컵케이크
+  <input type="radio" v-model="fileName" value='./img/pizza.png'> 피자 
+<p> <img v-bind:src="fileName" > </p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { fileName:''}
+}
+}).mount("#app")
+</script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue.js :)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://unpkg.com/vue@3.0.0"></script>
+	</head>
+	
+<body>
+<div id="app">
+  <input type="radio" value="red"   v-model="colors">빨강
+  <input type="radio" value="blue"  v-model="colors">파랑
+  <input type="radio" value="green" v-model="colors">초록
+  <p>선택하신 색상은 {{ colors}} 입니다</p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { colors:'red' }
+}
+}).mount("#app")
+</script>
+</body>
+</html>

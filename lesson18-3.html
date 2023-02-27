@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Vue.js :)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <script src="https://unpkg.com/vue@3.0.0"></script>
+	</head>
+<body>
+<div id="app">
+  <select v-model="selectColor">
+    <option value="">원하는 색을 선택하세요</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+  <p v-bind:style="{ backgroundColor: selectColor }">선택하신 색상은 {{ selectColor}}입니다</p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {  selectColor:''}
+}
+}).mount("#app")
+</script>
+</body>
+</html>
