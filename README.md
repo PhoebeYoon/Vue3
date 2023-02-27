@@ -1,7 +1,8 @@
 :cactus: Vue3 Lesson 
 
 
-## v-model.lazy : 데이터 양방향 바인딩을 수행 하며, 텍스트 입력 완료 후 변경된 사항이 표시
+## v-model.lazy 
+데이터 양방향 바인딩을 수행 하며, 텍스트 입력 완료 후 변경된 사항이 표시
 
 ```html
 <div id="app">
@@ -37,3 +38,20 @@ data(){
 
 ## v-model.trim
 trim 함수와 동일하게 입력값의 앞과 두의 공백을 제거해줍니다.
+```html
+<div id="app">
+  <input v-model.trim="myText">
+  <p>앞뒤 공백을 제거「{{ myText }}」</p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { myText:''}
+}
+}).mount("#app")
+</script>
+```
+
+
+
+
