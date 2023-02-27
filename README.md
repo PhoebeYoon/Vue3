@@ -62,10 +62,29 @@ data(){
   ``` <a v-bind:href="link.url" class="nav-link">{{ link.text }} </a>  ``` 을 다시 살펴보면,    
   ' v-bind:속성="속성값" '지정되어 있습니다. 그런데 위의 예제에서는 "속성값" 아니라 <b>{ 자바스크립트표현식: 속성값 } </b>으로 되어있습니다. 그러니까 <b>객체형식의 키와 값 </b>으로 표현한 것이죠. 태그안에 'v-bind:'를 적어서 Vue의 디렉티브 속성을 사용하겠다고 했으니 Vue가 알아듣는 표현식을 사용해야하는데 vue는 자바스크립트표현식을 이해할 수 있으니, css표현인 'background-color'가 아닌 자바스크립트 표현인 'backgoundColor'를 적은것이고 그 값으로 data에 선언된 변수를 준 것입니다. 
 또한, background-color: {selectColor} 로 주면 안되나 싶기도 하지만 앞에 v-bind: 가 있으니 css표현을 사용하면 에러가 발생합니다.
-
-
-  
   
   
 ### 여러개를 선택하는 select문  
+```html
+div id="app">
+  <select multiple v-model="selectColor">
+    <option value="">원하는 색을 선택하세요</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <option value="orange">Orange</option>
+    <option value="purple">Purple</option>
+    <option value="brown">Brown</option>
+  </select>
+  <p>선택하신 색상은 {{ selectColor}}입니다</p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {  selectColor:[]}
+}
+}).mount("#app")  
+```
+  여러개를 선택하기 위해서는 data에 selectColor:<b>'   '</b> 대신 <b>[ ]</b>를 지정해야 합니다. 그리고  목록선택시 shift키를 사용하여 여러항목을 선택하면 됩니다.
+  
   
