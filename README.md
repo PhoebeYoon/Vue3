@@ -37,3 +37,23 @@ data(){
 }).mount("#app")
 </script>
 ```
+
+## select 문
+```html
+<div id="app">
+  <select v-model="selectColor">
+    <option value="" >원하는 색을 선택하세요</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+  </select>
+  <p v-bind:style="{ backgroundColor: selectColor }">선택하신 색상은 {{ selectColor}}입니다</p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {  selectColor:''}
+}
+}).mount("#app")
+```
+
