@@ -1,5 +1,9 @@
 # Vue3 Lesson 를 위해 
-## Vue3 & mySql  
+## Vue.js란 사용자 인터페이스를 만들기 위한 프론트엔드 자바스크립트 프레임워크이다.
+## Vue.js의 특징
+- SPA ( Single Page Application)
+
+
 
 #### 첫번째 시도는 이렇게 해보자.
 1 . 사용할 에디터 :  vs code
