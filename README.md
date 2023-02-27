@@ -20,4 +20,20 @@ data(){
 red를 선택하면 blue, green이 선택되지 않고,   
 blue를 선택하면 선택되어 있던 red가 자동으로 해제되어  
 green를 선택하면 blue, red가 모두 해제된 상태가 된다.   
-이것이 일반 html에서의 작동방법일 것이다. 하지만 vue에서는 name 속성을 지정하지 않았지만 3개 중 1개만 유일하게 선택되어진다는 것을 알수있다.
+이것이 일반 html에서의 작동방법일 것이다. 하지만 vue에서는 name 속성을 지정하지 않았지만 3개 중 1개만 유일하게 선택되어진다는 것을 알수있다. 여러개의 라디오버튼에 v-model="같은 프로퍼티명"를 지정하면 이렇게 작동된다.  
+
+## radio 버튼으로 이미지를 바꿔보자 (컵케이크 또는 피자 뭘 먹을까 )
+```html
+<div id="app">
+  <input type="radio" v-model="fileName" value='./img/cupcake.png'>컵케이크
+  <input type="radio" v-model="fileName" value='./img/pizza.png'> 피자 
+<p> <img v-bind:src="fileName" > </p>
+</div>
+<script>
+Vue.createApp({
+data(){
+  return { fileName:''}
+}
+}).mount("#app")
+</script>
+```
