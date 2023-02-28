@@ -82,7 +82,7 @@ dealwithEvent(e,data){
       console.log(data)
     } }
 ```
-이제 완성해보자    
+완성은 아래와 같이.    
 
 ```html
 
