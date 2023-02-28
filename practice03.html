@@ -1,0 +1,60 @@
+
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+<style>
+.box { padding: 100px 0; width: 40%; text-align: center;
+    background-color: #ddd; margin: 20px; display: inline-block;}
+</style>
+</head>
+<body>
+<h1>Vue Template</h1>
+<div id="app">
+  <p v-if=showBook>
+    {{title}} - {{author}} -{{pages}}
+  </p>
+  <button v-on:click="toggleShowBook">
+    <span v-if="showBook">책정보감추기</span>
+    <span v-else>책정보  보기</span>
+  </button>
+  <br>
+  <!-- mouse events with arguments-->
+  <div class="box" @mouseover="dealwithEvent($event,100)">mouseover</div>
+  <div class="box" @mouseleave="dealwithEvent">mouseleave</div>
+  <div class="box" @dblclick="dealwithEvent">double click</div>
+  <div class="box" @mousemove="mousemove">마우스 위치 : {{x}} ,{{y}}</div> 
+</div>
+<script>
+Vue.createApp({
+data(){
+  return {
+    showBook :true,
+      title :'The Load of Rings',
+      author :'J. R. R. 톨킨',
+      pages : '3권짜리 1볼륨',
+      x:0,
+      y:0
+    }
+},
+methods :{
+  toggleShowBook(){
+    this.showBook = !this.showBook
+  },
+dealwithEvent(e,data){
+  console.log(e, e.type)
+  if (data){
+    console.log(data)
+  } },
+mousemove(e){
+  this.x = e.offsetX,
+  this.y = e.offsetY
+}
+}
+}).mount('#app');
+</script>
+</body>
+</html>
+
