@@ -4,9 +4,8 @@
 <a v-bind:href="url">
 <a :href="url">
 ```
-### 인라인 방식으로 속성지정하기 (href, src, text-align, color, font-size, background-color)
-블록태그에 :align="left (center, right)"
-
+### 인라인 방식으로 속성지정하는 것으로 <b> v-bind:속성명="데이터 혹은 함수" ( :속성명 ="데이터 혹은 함수" ) </b> 형식이다.
+(href, src, text-align, color, font-size, background-color 등)
 
 ```html
 <div id="app">
@@ -23,22 +22,22 @@
 	<p :class="[blue_underline_class, dark_class]">blue-underline, dark class 지정</p>
 </div>
 <script>
-	new Vue({
-		el: '#app',
-		data: {
-			naver_link : 'https://naver.com',
-			face2_name : 'face2.png',
-			align_right : 'right',
-			align_left : 'left',
-			align_center : 'center',
-			inline_font_red : 'red',
-			inline_size_150 : '150%',
-			inline_background : 'yellow',
-			blue_underline_class : 'blue-underline',
-			strike_through_class : 'strike-through',
-			dark_class : 'dark',
-		}
-	})
+new Vue({
+	el: '#app',
+	data: {
+		naver_link : 'https://naver.com',
+		face2_name : 'face2.png',
+		align_right : 'right',
+		align_left : 'left',
+		align_center : 'center',
+		inline_font_red : 'red',
+		inline_size_150 : '150%',
+		inline_background : 'yellow',
+		blue_underline_class : 'blue-underline',
+		strike_through_class : 'strike-through',
+		dark_class : 'dark',
+	}
+})
 </script>
 </body>
 
