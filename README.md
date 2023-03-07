@@ -15,3 +15,14 @@
 * Vue의 렌더링 시스템은 '가상 DOM'이라는 것을 기반으로 한다. 가상 DOM은 메모리에 내용을 갖고 있다가 실제 DOM에 동기화하는 프로그램 기법이다.
 
 12. Router(라우터) :[컴퓨터] 라우터(네트워크에서 데이터의 전달을 촉진하는 중계 장치) 
+13. vs code > file > preference > User snippets, 검색창에서 vue 엔터 > vue 선택
+ ``` {
+  "snippets 이름": {
+    "prefix": "snippets 실행 트리거",
+    "body": [
+      // snippets 실행시 원하는 template 작성
+    ],
+    "description": "snippets에대한 설명을 작성합니다."
+  }
+}
+```
