@@ -1,6 +1,8 @@
 ### lesson 03
 
 ``` html
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
 <div id="container">
         <h1>Hello, Vue</h1>
         <p>
