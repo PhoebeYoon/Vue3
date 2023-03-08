@@ -111,27 +111,6 @@ return {
     
 <img width="330" alt="스크린샷 2023-02-25 오후 12 49 46" src="https://user-images.githubusercontent.com/48478079/221334657-a8b9f7c2-eddd-441b-ae22-46ac8a1a618d.png">
 
-( 여기서 js 코드에 있는 'template' 라는 글자를 변경하면 작동되지 않는다 )
-    
-template를 사용해서 결과를 얻었다. 하지만 template를 사용하면 수시로 변하는 내용를 반영하기 어렵고 다른 함수를 실행하기도 어렵다. 이제 data()를 대신 사용해보자.   
-```html
-<h1>Vue Template</h1>
-    <div id="app">
-     <!-- <p>Template를 사용함</p> -->
-            <p>{{title}}</p>
-    </div>
-<script>
-    // js 코드내에 template 이라는 항목을 사용가능하지만 값이 수시로 변하거나 다른 함수를 수행할때는 어렵다. 그래서 data() 함수를 사용해 보자
-   const app = Vue.createApp({
-        data(){
-            return {
-            //  object를 리턴한다
-                title :'The Result is here'
-            }
-        }
-   }).mount('#app');
-</script>
-```
    
     
 ```html
