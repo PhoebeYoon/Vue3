@@ -124,6 +124,68 @@ Vue.component('my-component', {
 })
 ```
 
+## Custom events
+
+```
+[Set listener on component, within its parent]
+<button-counter v-on:incrementBy="incWithVal">
+
+[Inside parent component]
+methods: {
+  incWithVal: function (toAdd) { ... }
+}
+
+[Inside button-counter template]
+this.$emit(
+    'incrementBy', // Custom event name
+    5 // Data sent up to parent
+  )
+
+
+```
+## Slots
+
+```
+[ Using a single slot - Component template ]
+<div>
+  <h2>I'm a title</h2>
+  <slot>
+    Only displayed if no slot content
+  </slot>
+</div>
+
+[ Use of component with data for slot ]
+<my-component>
+  <p>This will go in the slot</p>
+</my-component>
+
+```
+##  Multiple slots
+```
+[ Component template ]
+<div class="container">
+  <header>
+    <slot name="header"></slot>
+  </header>
+  <main>
+    <slot>Default content</slot>
+  </main>
+  <footer>
+    <slot name="footer"></slot>
+  </footer>
+</div>
+
+[ Use of component with data for slots ]
+<app-layout>
+  <h1 slot="header">Page title</h1>
+  <p>the main content.</p>
+  <p slot="footer">Contact info</p>
+</app-layout>
+
+```
 
 
 
+
+
+출처 : https://devhints.io/vue
