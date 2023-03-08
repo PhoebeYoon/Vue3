@@ -79,3 +79,51 @@ v-model.number="..."  ( Always returns a number )
 v-mo del.trim="..." ( Strips whitespace )
  
  ```
+
+## Component anatomy
+```
+Vue.component('my-component', {
+  components: {
+    // 템플릿에서 사용할 수 있는 구성요소
+    ProductComponent,
+    ReviewComponent  ( 
+  },
+  props: {
+    // 컴포넌트가 허용하는 매개 변수들 및 유형들
+    message: String,
+    product: Object,
+    email: {
+      type: String,
+      required: true,
+      default: "none"
+      validator: function (value) {
+        // Should return true if value is valid
+      }
+    }
+  },
+  data: function() {
+    // `data` 함수여야 한다. 그래서 data(){ } 형태로 사용함
+    return {
+      firstName: 'Vue',
+      lastName: 'Mastery'
+    }
+  },
+  computed: {
+    //  상태가 변경될때까지 캐시된 값 반환
+    fullName: function () {
+      return this.firstName + ' ' + this.lastName
+    }
+  },
+  watch: {
+    // firstName 값이 변경되면 호출된다
+    firstName: function (value, oldValue) { ... }
+  },
+  methods: { ... },
+  template: '<span>{{ message }}</span>',
+  // 여러줄일 경우 백틱(`)을 사용할 수도 있다
+})
+```
+
+
+
+
