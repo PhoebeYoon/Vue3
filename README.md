@@ -19,14 +19,16 @@
     <p v-text="mytext"></p>
     <p v-text="mytext"></p>
     <p v-text="mytext"></p>
-  </div>
+</div>
 <script>
-new Vue({
-    el:'#app',
-    data:{
-        mytext:"Hello, Vue~"
+    const App = {
+        data(){
+            return {
+              mytext:"Hello, Vue~"
+            }
+        }
     }
-})
+    Vue.createApp(App).mount('#app')
 </script>
 </body>
 </html>
@@ -47,12 +49,14 @@ html로 표시하고자 할때 사용한다
 		<p v-html="myText"></p>
 	</div>
 <script>
-	new Vue({
-	el: '#app',
-	data: {
-	myText:'<h1>Hello!!!</h1>'
-	}
-	})
+    const App = {
+        data(){
+            return {
+              myText:'<h1>Hello!!!</h1>'
+            }
+        }
+    }
+    Vue.createApp(App).mount('#app')
 </script>
 </body>
 ```
