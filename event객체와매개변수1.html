@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://unpkg.com/vue@next"></script>
+   <title>Document</title>
+</head>
+<body>
+<div id="app">
+  <button @click="handler('click 1 = hi', $event)">Click me</button>
+  <button @click="handler('click 2 = hello', $event)">Click me</button>
+</div>
+</body>
+<script>
+Vue.createApp({
+  data(){
+    return {
+    }
+  },
+  methods:{
+    handler(msg, event) {
+      console.log(msg)
+      console.log(event)
+    }
+ }
+}).mount("#app")
+</script>
+</html>
