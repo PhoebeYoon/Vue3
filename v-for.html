@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://unpkg.com/vue@next"></script>
+
+   <title>Document</title>
+</head>
+<body>
+<div id="app">
+<!-- <ul>
+    <li v-for="(name,index) in names"> {{name}}:{{index}}</li>
+</ul> -->
+<!-- 
+<ul>
+ <li v-for="(car,index) in cars">
+   {{ car.brand }} : {{ index }} : {{ car.color }}
+</li>
+</ul> -->
+<ul>
+    <li v-for="(key,value,index) in user">
+        {{ index }} : {{ key }} : {{ value }}
+    </li>
+</ul>
+</div>
+<script>
+const App = {
+data(){
+return {
+  user:{
+    name:'Francis',
+    lastname:'Jones',
+    age:24
+},
+  names:[
+    'Francis',
+    'Jane',
+    'Steve'
+], 
+cars:[
+    {
+        brand:'Ferrari',
+        color:'Red'
+    },
+    {
+        brand:'Fiat',
+        color:'Blue'
+    },
+    {
+        brand:'Ford',
+        color:'Green'
+    }
+  ]
+}
+}
+}
+Vue.createApp(App).mount('#app')
+
+</script>
+</html>
