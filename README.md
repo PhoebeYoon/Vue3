@@ -51,21 +51,26 @@ const App = {
 ```
 
 위의 예제에서 javascript 부분만 아래와 같이 변경해보자.   
-```javascript
+``` javascript
 <script>
-    var teaList = [
+  var teaList = [
         {name : '다즐링', price: 4000},
         {name: '얼그레이' , price:4500 },
         {name: '카페라떼' , price:3500 }
     ]
-    new Vue({
-        el:'#app' ,
-        data: {
-            myTea: teaList
-        }
-    })
+const App = {
+  data(){
+    return {
+    myTea: teaList
+    }
+  }
+}
+Vue.createApp(App).mount('#app')
 </script>
 ```
+결과화면을 확인한다.
+
+        
 ### $data : 데이터의 내부를 확인하고자 할때
 ```html
 <body>
@@ -74,16 +79,18 @@ const App = {
     {{ $data }}
 </div>
 <script>
-    new Vue({
-        el:'#app' ,
-        data: {
-            myText : 'Hello',
-            Number:1234,
-            myBoolean : true,
-            myArr :[1,2,3,4]
-
-        }
-    })
+const App = {
+  data(){
+    return {
+      myTea: [
+    {name : '다즐링', price: 4000},
+    {name: '얼그레이' , price:4500 },
+    {name: '카페라떼' , price:3500 }
+  ]
+    }
+  }
+}
+Vue.createApp(App).mount('#app')
 </script>
 </body>
 ```
