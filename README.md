@@ -1,6 +1,7 @@
 ## html 파일과 js파일을 분리하여 작업과 template 문법
 
 ### html, js를 분리해보자
+[index.html]
 ```html
 <html lang="ko">
 <head>
@@ -17,12 +18,12 @@
     <div id="app">
         <p>{{ title }} - by {{ author }}, {{ pages }}</p>
     </div>
-    <script src="./lesson04/app04-1.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
 
 ```
-
+[app.js] (파일생성위치에 맞춰서 응용하세요)
 ```javascript
  Vue.createApp({
        data(){
@@ -33,10 +34,13 @@
                 }
             }
  }).mount('#app');
-```
-### 템플릿 문법
+```    
+결과를 확인하세요. 혹시 에러가 났다면 js파일의 경로와 파일이름을 확인하세요 
 
-Vue.js는 렌더링 된 DOM을 기본 Vue 인스턴스의 데이터에 바인딩할 수 있는 html 템플릿 구문을 사용할 수 있는데,여기서 템플릿이란 html, css등의 마크업에 사용된 속성과 vue 인스턴스에서 정의된 데이터를 연결하여 브라우저에서 볼 수 있도록 html로 변환해주는 속성이다.   
+### 템플릿 문법을 사용해보겠습니다 
+
+Vue.js는 렌더링 된 DOM을 기본 Vue 인스턴스의 데이터에 바인딩할 수 있는 html 템플릿 구문을 사용할 수 있는데,  
+여기서 템플릿이란 html, css등의 마크업에 사용된 속성과 vue 인스턴스에서 정의된 데이터를 연결하여 브라우저에서 볼 수 있도록 html로 변환해주는 속성을 말합니다.   
 우선, 아래의 예제를 보고 자세히 설명하자.  
 
 ```html
@@ -60,7 +64,7 @@ Vue.js는 렌더링 된 DOM을 기본 Vue 인스턴스의 데이터에 바인딩
 <img width="351" alt="스크린샷 2023-02-25 오전 11 56 43" src="https://user-images.githubusercontent.com/48478079/221332691-4d0a066d-9833-44c5-abc2-4828bf26d24d.png">
 
 여기서, 이전의 예제에서는{{ }} 만 사용해도 해당 내용이 잘 출력되었지만 여기서는 안되는 것처럼 보인다.  
-이제 내용을 조금 변경해보자 
+이제 내용을 조금 변경해보자 ( #부분은 설명이니 제거하시고 실습하세요)
 ```html
 
 <p>텍스트 보간법 사용: {{raw}}</p> # 바뀐 부분 
@@ -107,14 +111,18 @@ return {
     </script>
 </body>
 ```
-크롬 브라우저에서 '개발자도구'를 열어보면, 아래와 같고, <div id="app" data-v-app> 보인다. Vue의 앱이라는 뜻이다.    
+크롬 브라우저에서 '개발자도구'를 열어보면, 아래와 같이 보인다    
     
-<img width="330" alt="스크린샷 2023-02-25 오후 12 49 46" src="https://user-images.githubusercontent.com/48478079/221334657-a8b9f7c2-eddd-441b-ae22-46ac8a1a618d.png">
+<img width="330" alt="스크린샷 2023-02-25 오후 12 49 46" src="https://user-images.githubusercontent.com/48478079/221334657-a8b9f7c2-eddd-441b-ae22-46ac8a1a618d.png">.  
 
-   
+``` html 
+<div id="app" data-v-app> 
+``` 
+는 Vue의 앱이라는 뜻이다.   
     
-```html
+이제 아래 내용 2개를 만들어보고, 무엇이 다르게 작성되었는지 스스로 확인해 보자. 
     
+ ``` html
     <body>
     <h1>Vue Template</h1>
     <div id="app">
