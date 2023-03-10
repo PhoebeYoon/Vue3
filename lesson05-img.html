@@ -1,0 +1,35 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://unpkg.com/vue@next"></script>
+
+   <title>Document</title>
+</head>
+<body>
+    <div id="app">
+       <img v-bind:src="src" v-bind:alt="alt"/><br>
+       <a v-bind:href="link">Naver</a> 
+       <p v-text="myText"></p>
+       <p v-html="myHtml"></p>
+    </div>
+</body>
+<script>
+    const App = {
+        data(){
+            return {
+              src:'https://picsum.photos/200/300',
+              alt:'Another image',
+              link:'http://www.naver.com',
+              myText:'Hello guys !!',
+              myHtml:'<strong>My html</strong>'
+            }
+        }
+    }
+    Vue.createApp(App).mount('#app')
+</script>
+</html>
