@@ -32,6 +32,7 @@
     <p> Is it true:{{ isItTrue ? 'Yes':'No' }}</p>
     <p>{{ array[0] }}</p>
     <p>{{ obj.car }}</p>
+    p>{{ obj[car] }}</p> # 자바스크립트표현이 가능하므로 이것도 가능
     <p>{{ func() }}</p>
   </div>
   <script>
