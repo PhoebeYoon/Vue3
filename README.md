@@ -64,8 +64,6 @@
 전체적인 지시구문은 아래 그림과 같습니다. 
 
 <img width="560" alt="스크린샷 2023-03-10 오후 1 54 55" src="https://user-images.githubusercontent.com/48478079/224226906-d258d88c-06f6-47ed-a27d-d5d9da146349.png">   
-v- 로 시작하는 경우 간략하게 사용하려면 생략될 수 있습니다.   
-
 [발췌] https://vuejs.org/guide/essentials/template-syntax.html#directives 
 
 
@@ -84,9 +82,7 @@ v- 로 시작하는 경우 간략하게 사용하려면 생략될 수 있습니�
 
 ## v-show
 표현식의 결과가 true /false 냐에 따라 엘리먼트가 보이거나 감추어집니다.
-```javascript
-<div v-html="html"></div>
-```
+
 
 ## v-if
 표현식의 결과가 true /false 냐에 따라 엘리먼트나 템플릿를 렌더링합니다
@@ -212,5 +208,7 @@ components 에 한정되어 사용됩니다
 ## v-pre
 ## v-once
 ## v-memo
+
+더 자세한 내용을 실습을 통해 살펴보도록 하겠습니다. 
 
 
