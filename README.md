@@ -13,7 +13,43 @@
 <p v-else > 우의 2개의 조건이 false일대 표시하는 내용 </p>
 ```
 
-### 1. v-if, v-if v-else, v-if v-else-if, v-else 
+### 1. 간단한 예제를 해봅시다.
+``` html
+<div id="app"> 
+    <p v-show="false">Show it</p>
+    <p v-if="userAge > allowedAge" > You are old enough</p> 
+    <p v-if="checkUser()"> This is Hong </p>
+</div>
+<script>
+const App = {
+data(){
+  return {
+    user:'Hong',
+    userAge:15,
+    allowedAge:18
+  }
+},
+methods:{
+  checkUser(){
+      return this.user === 'Hong' ? true : false
+  }
+ }
+}
+Vue.createApp(App).mount('#app')
+```
+결과를 확인했다면 이제는 아래와 같이 변경하세요. 
+``` html
+<p v-if="userAge>15"> You drink alcohol</p>
+<div>이 태그빼고 결과를 확인한 후 이 태그를 삽입해서 에러가 나오는지 확인하세요</div> 
+<p v-else> You can't drink</p>
+
+ userAge:16,
+```  
+중간에 있는 div태그로 인해 v-if 와 v-else 의 흐름이 깨져서 알맞은 결과를 얻을 수 있다. 그러니 <b>조건문 중간에 다른 태그를 사용하지 말아야</b> 한다. 
+
+
+
+### 2. v-if, v-if v-else, v-if v-else-if, v-else 
 ```html
 <!DOCTYPE html>
 <html>
