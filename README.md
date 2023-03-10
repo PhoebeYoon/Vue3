@@ -1,7 +1,7 @@
 ##### 🌵 Vue3.js
 
 
-## javascript 표현
+## javascript 표현들 
 ``` javascript
 {{ number + 1 }}
 {{ ok ? 'YES' : 'NO' }}
@@ -59,13 +59,14 @@
 
 
 
-## Directives
+## 이제 Directives에 대해 보도록 하겠습니다 
 디렉티브는 v- 접두사를 사용하는 특수 특성입니다. v-html, v-bind, v-for, v-on, v-slot 등이 있습니다.
+전체적인 지시구문은 아래 그림과 같습니다. 
 
-## 그래서 전체적인 지시구문은 아래 그림과 같습니다. 
+<img width="560" alt="스크린샷 2023-03-10 오후 1 54 55" src="https://user-images.githubusercontent.com/48478079/224226906-d258d88c-06f6-47ed-a27d-d5d9da146349.png">   
+v- 로 시작하는 경우 간략하게 사용하려면 생략될 수 있습니다.   
 
-<img width="371" alt="스크린샷 2023-03-09 오후 11 00 26" src="https://user-images.githubusercontent.com/48478079/224048243-4d671065-027c-4009-a375-d87a7ebb6db8.png">
-
+[발췌] https://vuejs.org/guide/essentials/template-syntax.html#directives 
 
 
 ## v-text
