@@ -117,4 +117,54 @@ methods:{
 }).mount('#app')
 </script>
 
+```   
+
+마우스를 움직여 좌표를 얻는 예제를 만들어보자.   
+
+``` html
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+  <div id="app">
+    <div class="box" v-on:mousemove="getCoord">
+        Hover me
+    </div>
+    <p>x: {{ x }}</p>
+    <p>y: {{ y }}</p>
+</div>
+<script>
+Vue.createApp({
+  data(){
+    return {
+      name:'Francis',
+      x:0,
+      y:0
+    }
+    },
+methods:{
+  getCoord(event){
+    this.x = event.clientX;
+    this.y = event.clientY;
+  }
+}
+}).mount("#app")
+</script>
+<style>
+.box {
+  background: red;
+  width:200px; height:200px;
+  color:#fff; text-align: center;
+}
+</style>
+</body>
+</html>
 ```
+
+
+
