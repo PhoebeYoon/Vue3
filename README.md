@@ -1,7 +1,14 @@
 ## Vue3 Lesson 를 위해 무작정 한번 만들어보자
 
+### :cactus:  CDN vs NPM 
+vue로 만든 파일을 실행하려면 여러가지 환경설정을 해야 합니다. CDN 방식은 이런 환경설정을 링크를 통해서 해결하는 것입니다. 처음에 vue을 배울때 좋죠.     
+<b> CDN은 Content Delivery Network</b>의 약자이니 영어로 보시면 확실히 이해가 될 것입니다.   
+그래서 script 태그에 해당 링크를 넣어주는 것입니다. 마치 제이쿼리할때처럼요.  
+그리고 <b>NPM은 Node Package Manager</b> 의 약자로 한마디로 패키지를 당신의 컴에 설치하겠다는 뜻입니다.  
+즉 vue가 실행될 수 있는 환경을 당신의 컴에 만들겠다는 의미죠.  
+그래서 vue가 실행될때 필요한 node.js가 있는지 확인하는 것입니다.
 
-파일이름 : index.html   
+이제 무조건 하나 만들어 봅시다.  :file_folder:Basics :file_folder: index.html   
 ```html
 
 <html lang="ko">
