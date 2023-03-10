@@ -14,18 +14,18 @@
     <p>가격 -{{ myObject.price }}</p>
 </div>
 <script>
-    new Vue({
-        el:'#app' ,
-        data: {
-            myPrice :1000,
+    const App = {
+        data(){
+            return {
+              myPrice :1000,
             myName:' Hong',
             myArrary:['🍎','🍉','🍇','🍓'],
             myObject :{name:'Coffeee', price :2500}
+            }
         }
-
-    })
+    }
+    Vue.createApp(App).mount('#app')
 </script>
-
 ```
 
 ```html
@@ -35,17 +35,18 @@
     <p>{{myTea[1].name}} : {{myTea[1].price}}</p>
 </div>
 <script>
-    new Vue({
-        el:'#app' ,
-        data: {
-            myTea: [
-            {name : '다즐링', price: 4000},
-            {name: '얼그레이' , price:4500 },
-            {name: '카페라떼' , price:3500 }
-            ]
-        }
-
-    })
+const App = {
+  data(){
+    return {
+    myTea: [
+    {name : '다즐링', price: 4000},
+    {name: '얼그레이' , price:4500 },
+    {name: '카페라떼' , price:3500 }
+  ]
+    }
+  }
+}
+    Vue.createApp(App).mount('#app')
 </script>
 ```
 
