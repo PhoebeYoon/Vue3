@@ -16,31 +16,46 @@
 ```
 
 간단히 실습해 봅시다.  
-```
-<body>
-    <div id="app">
-        <p>{{ gretting }}</p>
-        <p> Is it true:{{ isItTrue ? 'Yes':'No' }}</p>
-        <p>{{ array[0] }}</p>
-        <p>{{ obj.car }}</p>
-        <p>{{ func() }}</p>
-    </div>
-</body>
+``` html
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 
-data(){
-            return {
-                gretting:'Hello guys today is ' + date,
-                isItTrue: true,
-                array:['Francis','Jane'],
-                obj:{
-                    car:'Ferrari'
-                },
-                func:()=>{
-                    return 'Message from function'
-                }
-            }
+    <title></title>
+</head>
+<body>
+  <div id="app">
+    <p>{{ gretting }}</p>
+    <p> Is it true:{{ isItTrue ? 'Yes':'No' }}</p>
+    <p>{{ array[0] }}</p>
+    <p>{{ obj.car }}</p>
+    <p>{{ func() }}</p>
+  </div>
+  <script>
+  const date = new Date().toLocaleString()
+   const App = {
+    data(){
+      return {
+        gretting:'Hello guys today is ' + date,
+        isItTrue: true,
+        array:['Francis','Jane'],
+        obj:{
+            car:'Ferrari'
+        },
+        func:()=>{
+            return 'Message from function'
         }
-````
+      }
+    }
+    }
+    Vue.createApp(App).mount('#app')
+  </script>
+</body>
+</html>
+```
 
 
 
