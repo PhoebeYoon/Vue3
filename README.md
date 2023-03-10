@@ -162,7 +162,9 @@ const appName = Vue.createApp({
 appName.mount('#app')
 </script>
 </body>
-```
+```   
+
+lesson04-v-text 로 진행사세요 
     
 ### 🌵 버전을 주의하세요   
 위의 코드중에 아래와 같은 vue 연결코드를 보셨을텐데요 
