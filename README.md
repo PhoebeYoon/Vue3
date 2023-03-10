@@ -22,10 +22,10 @@
 	<p :class="[blue_underline_class, dark_class]">blue-underline, dark class 지정</p>
 </div>
 <script>
-new Vue({
-	el: '#app',
-	data: {
-		naver_link : 'https://naver.com',
+const App = {
+  data(){
+    return {
+    naver_link : 'https://naver.com',
 		face2_name : 'face2.png',
 		align_right : 'right',
 		align_left : 'left',
@@ -36,8 +36,10 @@ new Vue({
 		blue_underline_class : 'blue-underline',
 		strike_through_class : 'strike-through',
 		dark_class : 'dark',
-	}
-})
+    }
+  }
+}
+Vue.createApp(App).mount('#app')
 </script>
 </body>
 
@@ -57,16 +59,17 @@ new Vue({
     <p v-bind:class="[myClass, darkClass]">v-bind로 복수의 클래스 지정/p>
     <p v-bind:class="{'strike-through': isON}">데이터로 클래스 ON/OFF</p>
 </div>
-
 <script>
-    new Vue({
-        el: '#app',
-        data: {
-            myClass: 'strike-through',
+const App = {
+  data(){
+    return {
+      myClass: 'strike-through',
             darkClass: 'dark',
             isON: true
-        }
-    })
+    }
+  }
+}
+Vue.createApp(App).mount('#app')
 </script>
 </body>
 ```
