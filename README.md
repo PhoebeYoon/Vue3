@@ -57,8 +57,6 @@
 </html>
 ```
 
-
-
 ## 이제 Directives에 대해 보도록 하겠습니다 
 디렉티브는 v- 접두사를 사용하는 특수 특성입니다. v-html, v-bind, v-for, v-on, v-slot 등이 있습니다.
 전체적인 지시구문은 아래 그림과 같습니다. 
@@ -69,6 +67,7 @@
 
 ## v-text
 엘리먼트의 문자 내용을 업데이트합니다.
+
 ```javascript
 <span v-text="msg"></span>
 <span>{{msg}}</span>
@@ -78,7 +77,7 @@
 엘리먼트의 innerHTML를 업데이트합니다. 스트링형태입니다
 ```javascript
 <div v-html="html"></div>
-```
+```  
 
 ## v-show
 표현식의 결과가 true /false 냐에 따라 엘리먼트가 보이거나 감추어집니다.
