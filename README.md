@@ -25,13 +25,14 @@
 <body>
 <div id="app">
     <div class="orange">오렌지색으로</div>
+   
+    <div :style="myOrange">보라색으로</div>
+    <div :style="colorntext">파란색</div>
+    <div :style="{ color: myRed }"> 빨간색으로  </div>
+    <div :style="{color:anyColor}">겨자색</div>
+   
     <div :class="[ 1>2 ? ' ' : 'style3']">파란 또는 녹색</div>
     <div :class="{style4 : true}"> 분홍색</div>
-
-    <div :style="{ color: myRed }"> 빨간색으로  </div>
-    <div :style="myOrange">보라색으로</div>
-    <div :style="{color:anyColor}">겨자색</div>
-    <div :style="colorntext">파란색</div>
 </div>
 </body>
 <script> 
