@@ -1,13 +1,14 @@
 ##### 🌵 Vue3.js
 
 ## v-model에서 사용할 수 있는
-### trim, lazy에 대해 알아보겠습니다.
+### .lazy .number .trim 에 대해 알아보겠습니다.
 
 ``` html
 <div id="app">
   <form v-on:submit.prevent="formHandler">
     <label>Name:</label>
     <input type="text" v-model="formData.name" placeholder="길동"/>
+    <button type="submit"> Submit </button>
   </form>
   <p>{{ formData.name}}</p>
 </div>
