@@ -38,13 +38,19 @@ Vue.createApp({
 <div id="app">
   <h1>Hello {{ userName }}!</h1>
   <h1 v-text="userName"></h1>
+  <p>이름 : {{ user.name}}</p>
+  <p v-text="user.age">나이는 안 보여요</p>
 </div>
 </body>
 <script>
 Vue.createApp({
   data(){
     return {
-      userName:'Mr.Kim'
+      userName:'Mr.Kim',
+      user:{
+        name:'Mr. Park',
+        age :20
+      }
        }
     }   
 }).mount("#app")
