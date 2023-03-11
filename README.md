@@ -7,7 +7,7 @@
 2. 배열(Arrary) 형태로
 ``` :class=" [ 조건? '클래스이름1' :'클래스이름2']"  ```
 3. 인라인 스타일로 바인딩
-``` <div :style={disaply: 'block', textAlign:'center'}  ``` 
+``` <div :style={   }  ``` 
 
 
 아래 예제를 잘 살펴보세요. 
