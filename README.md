@@ -63,6 +63,13 @@ methods:{
 이제 이해됐다면, 
 ```<input type="text" v-model.number="formData.age"/> ```로 변경해서 실행해보세요. 콘솔창에 34라고 출력됩니다. 
 
+이와같이 이번에는 
+``` 
+<input type="text" v-model="formData.name" placeholder="길동"/> 
+```   
+로 내용을 확인한다면 실행화면에서 입력할때 일부러 공백을 넣어줍니다 그럼 콘솔창에는 공백이 그대로 유지된채 콘솔창에 출력됩니다.   
+``` v-model.trim="formData.name"  ```  ,  ```  console.log("*"+this.formData.name+"*") ``` 으로 변경하고 아까처럼 실행화면에서 공백을 주고 입력해 보겠습니다. 
+이번에는 공백이 제거된채 콘솔창에 출력됩니다. 내용에 공백제거를 확인하기 위해 별표를 앞뒤로 넣었습니다  
 
 
 
