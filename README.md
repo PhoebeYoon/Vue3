@@ -72,6 +72,22 @@ methods:{
 이번에는 공백이 제거된채 콘솔창에 출력됩니다. 내용에 공백제거를 확인하기 위해 별표를 앞뒤로 넣었습니다  
 그래서 ```   <input type="text" v-model.trim.lazy="formData.name" placeholder="길동"/> ``` 이 최종코드입니다.
 
+```html
+div id="app">
+  <form v-on:submit.prevent="formHandler">
+    <label>Name:</label>
+    <input type="text" v-model.trim.lazy="formData.name" placeholder="길동"/>
+    <label>Age:</label>
+    <input type="text" v-model.number="formData.age"/>
+    <input type="checkbox" id="checkbox" v-model="formData.checked"/>
+    <label>{{ formData.checked }}</label>
+    <button type="submit">
+      Submit
+  </button>
+  </form>
+  <p>{{ formData.name}} , {{ formData.age +1 }} </p>
+</div>
+```
 
 
 
