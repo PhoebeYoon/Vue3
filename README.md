@@ -24,11 +24,11 @@ Vue.createApp({
   },
   methods:{ 
     message(){
-      console.log('message')
+      console.log('From methods -- message')
       return this.user =='kim'? 'Welcome':'Not allowed'
     },
     isActive(){
-      console.log('active')
+      console.log('From methods -- active')
       return this.active? 'Active':'Not active'
     },
     toggleActive(){
@@ -40,5 +40,13 @@ Vue.createApp({
 ```
 
 위의 내용을 완성한 후에 웹페이지를 리로드하면 콘솔창에 'message','active'출력되고, 또 버튼을 클릭할때마다 콘솔창에 'message','active' 가 출력되는 것을 확인하세요. 
+
+이제 코드를 조금 추가해 보겠습니다 
+``` <input type="text" v-model="user"> ```  
+그후  웹페이지를 리로드시키고, 텍스트 상자에 글자를 하나씩 적어봅니다.  
+그러면 웹페이지를 리로드할때, 텍스트 상자에 글자를 하나씩 입력할때마다 콘솔창에 
+" from methods -- message " 
+" from methods -- active " 가 출력되는 것을 확인할 수 있습니다.  
+즉 이벤트가 발생하거나 내용이 바뀔때마다 어플리케이션 전체가 재실행되는 것입니다.
 
 
