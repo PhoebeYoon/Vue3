@@ -130,26 +130,17 @@ This is content</div>
 ``` html
 <div id="app">
     <div class="element" v-bind:class="colors">This is my content</div>
-    <div v-on:click="colors.red= !colors.red">Click</div>
+    <div v-on:click="colors.red= !colors.red">Activate Red</div>
 </div>
 <script>
 Vue.createApp({
-  data(){
-  return {
-    newStyle:{
-      fontSize:'50px',
-      border:'5px solid green'
-  },
-  colors:{
-    blueClass:{
-        name:'blue',
-        active:true
-    },
-    redClass:{
-        name:'red',
-        active:false
+data(){
+return {
+    colors:{
+      blue:true,
+      red:false
     }
-} }  },
+  } },
   methods:{ }
 }).mount("#app")
 </script>
