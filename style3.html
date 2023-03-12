@@ -1,0 +1,38 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <!-- <div class="element" :class="{ red : true, fontSize:true}" v-on:click=" fontLarge= !fontLarge"> This is content</div>
+    <div class="element" :class="{ red : redColor, large:true}"  v-on:click=" redColor = !redColor"> This is content</div> --> 
+    
+    <!-- <div class="element" :class="{ red : true, large:false}" v-on:click=" fontLarge= !fontLarge"> This is content</div> 
+    <div class="element" :class="{ red : true, large:true}" v-on:click=" large= !large"> This is content</div> -->
+
+<div class="element" :class="{ red : redColor, large:!fontLarge}" v-on:click=" redColor = !redColor"> This is 글자색상</div>
+<div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" fontLarge = !fontLarge"> This is 글자크기</div>
+
+  </div>
+  <script>
+    Vue.createApp({
+      data(){
+        return {
+          redColor: false,
+          fontLarge : true
+        }
+      }
+    }).mount("#app")
+      </script>
+      <style>
+        div { margin: 10px;}
+        .element { color:gold}
+        .red { background-color: red;}
+        .large { font-size: 30px;}
+      </style>
+</body>
+</html>
