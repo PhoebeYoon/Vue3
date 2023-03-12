@@ -177,10 +177,34 @@ return {
     }
   }
 
+```   
+
+## 좀더 복잡한 것을 시도해보겠습니다
+newStyle를 새로 작성한 후 이것을 스타일에 적용해 보겠습니다. 그리고 클릭이벤트로 이 스타일중 일부를 바꾸도록 하겠습니다. 아래와 같이 수정하세요   
+
+``` html
+ <div id="app">
+    <div class="element" v-bind:class="[
+    colors.blueClass.active ? colors.blueClass.name :'', 
+    colors.redClass.active ?  colors.redClass.name :''
+    ]" :style="newStyle">This is my content</div>
+    <div v-on:click="colors.redClass.active= !colors.redClass.active, newStyle.fontSize='100px'">Activate Red1</div>
+  </div>
+  
+   return {
+    newStyle:{
+      fontSize:'50px',
+      border:'5px solid green'
+    },
+    colors:{
+      blueClass: {name:'blue', active :true },
+      redClass: {name:'red', active:false}
+    }
+  }
+  
+  
+
 ```
-
-
-
 
 
 
