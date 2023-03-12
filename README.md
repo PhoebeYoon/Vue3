@@ -19,7 +19,7 @@ Vue.createApp({
   data(){
   return { 
     user:'',
-    active:''
+    active:false
   }
   },
   methods:{ 
@@ -37,9 +37,8 @@ Vue.createApp({
   }
 }).mount("#app")
 </script>
-
 ```
 
-
+위의 내용을 완성한 후에 웹페이지를 리로드하면 콘솔창에 'message','active'출력되고, 또 버튼을 클릭할때마다 콘솔창에 'message','active' 가 출력되는 것을 확인하세요. 
 
 
