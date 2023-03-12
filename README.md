@@ -48,8 +48,23 @@ Vue.createApp({
 " from methods -- message " 
 " from methods -- active " 가 출력되는 것을 확인할 수 있습니다.  
 즉 이벤트가 발생하거나 내용이 바뀔때마다 어플리케이션 전체가 재실행되는 것입니다. 이것은 매우 비효율적이라는 것을 알수있습니다.  
+ 
+이제는 computed 속성를 사용해 보겠습니다.  아래의 코드를 추가합니다 
 
-이제는 computed 속성를 사용해 보겠습니다.  
+``` html
+ computed:{
+    com_message(){
+      console.log(' --> computed -- messag ')
+      return this.user =='kim'? 'Welcome':'Not allowed'
+    }
+  },
+```   
+이제 웹페이지를 리로드 한번만  합니다. 아래와 같은 출력을 얻습니다 
+<img width="196" alt="스크린샷 2023-03-12 오후 7 29 54" src="https://user-images.githubusercontent.com/48478079/224538910-6d378d3e-0445-45bc-a6dd-d6223160fa90.png">
 
+이제 버튼을 클릭해 봅니다 그러면 ' --> computed -- messag '은 출력되지 않고 methods에 있는 내용만 출력됩니다. 버튼을 여러번 클릭할지라도 ' --> computed -- messag '는 출력되지 않는 것을 확인할 수 있습니다.  (이렇게 결과가 나오셨나요?)  
+이제 텍스트상자에 글자를 입력합니다. 입력창에 글자를 입력하면 ' --> computed -- messag '이 콘솔창에 나타납니다.
 
+computed 속성과 methods에 같은 함수를 적용했는데, methods는 여러가지 경우에 모두 반응하고, computed는 지정된 경우에는 반응합니다.
+더 자세한 내용은 나중에 알아보기로하고 지금은 이 정도로 이해하시면 될듯 싶습니다
 
