@@ -113,7 +113,7 @@ return {
 여기서 ```<style>`` 태그를 보겠습니다.  style태그의 .large는 ``` { font-size: 30px;}  ```로 설정되어 있습니다. 그러니까 .large가 true 일때는 클래스가 정상적으로 적용되지만 이벤트로 해당 클래스를 제거하는것은 되질 않습니다.   
 
 아래처럼 변경해주세요 .
-``` style
+``` javascript
 <div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" redColor = !redColor"> 
    This is content</div>
 <div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" fontLarge = !fontLarge"> 
