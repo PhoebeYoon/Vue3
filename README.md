@@ -114,7 +114,7 @@ return {
 
 아래처럼 변경해주세요 .
 ``` javascript
-<div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" redColor = !redColor"> 
+<div class="element" :class="{ red : redColor, large:!fontLarge}"  v-on:click=" redColor = !redColor"> 
    This is content</div>
 <div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" fontLarge = !fontLarge"> 
 This is content</div>
