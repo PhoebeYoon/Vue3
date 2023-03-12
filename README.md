@@ -71,11 +71,39 @@ computed 속성과 methods에 같은 함수를 적용했는데, methods는 여�
 전체내용을 정리해서 다시 실행해봅시다. 
 
 ``` html
-
+<div id="app">
+    <input type="text" v-model="user">
+    <button @click="toggleActive">action</button>
+    <div> message : {{ com_message}} -- {{ com_message }}</div>
+    <div> active {{ com_isActive }} </div>
+    <div>{{user}}</div>
+  </div>
+  <script>
+Vue.createApp({
+  data(){
+  return { 
+    user:'',
+    active:false
+  }
+  },
+  computed:{
+    com_message(){
+      console.log(' --> computed -- messag ')
+      return this.user =='kim'? 'Welcome':'Not allowed'
+    },
+    com_isActive(){
+      console.log(' --> computed -- active')
+      return this.active? 'Active':'Not active'
+    }
+  },
+  methods:{ 
+    toggleActive(){
+      this.active = this.active? false:true
+    }
+  }
+}).mount("#app")
+</script>
 
 ```
-
-
-
-
-
+위 코드위에서 함수를 computed로 옮기고 함수의 이름을 조금 변경했다. 그리고 주의할 것은 computed속성를 사용할때는 methods의 함수를 부르는것처럼 () 를 붙이지 않는다는 것이다.  웹페이지를 실행시키고 글자를 적고 버튼을 클릭해보자  
+콘솔창에는 휠씬 적은 갯수의 출력이 있을 것이다.
