@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <script src="https://unpkg.com/vue@next"></script>
+   <title>Document</title>
+</head>
+<body>
+  <div id="app">
+    <button @click="toggleActive">action</button>
+    <div> message : {{ message()}}</div>
+    <div> active {{ isActive() }} </div>
+  </div>
+</body>
+<script>
+Vue.createApp({
+  data(){
+  return { 
+    user:'',
+    active:''
+  }
+  },
+  methods:{ 
+    message(){
+      console.log('message')
+      return this.user =='kim'? 'Welcome':'Not allowed'
+    },
+    isActive(){
+      console.log('active')
+      return this.active? 'Active':'Not active'
+    },
+    toggleActive(){
+      this.active = this.active? false:true
+    }
+  }
+}).mount("#app")
+</script>
+<style>
+.element {color: white; background: black; padding:10px}
+.blue { background: blue;}
+.green {background: green;}
+.red { background: red ;}
+.large{ font-size: 40px;}
+</style>
+</html>
