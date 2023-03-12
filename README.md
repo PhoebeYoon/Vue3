@@ -89,6 +89,25 @@ Vue.createApp({
       
 return문의 redColor:false 로 되어 있는지 확인하세요. 2번째줄을 클릭하면 빨간배경에 노란글자가 나오는지 확인하세요.
 
+## 그럼 대체 왜 이렇게 사용하는 걸까요?
+비교를 해보면 왜 이런 방식으로 사용하는지 좀더 이해가 될것입니다. 
+
+위의 코드를
+``` html
+<div class="element" :class="{ red : true, large:true}"  v-on:click=" fontLarge= !fontLarge"> This is content</div>
+<div class="element" :class="{ red : true, large:false}"  v-on:click=" large= !large"> This is content</div>
+```   
+그리고 
+``` javascript
+return {
+   redColor: false,
+   fontLarge : true
+   }
+스타일태그에 추가하세요
+.large { font-size: 30px;}
+``` 
+브라우저의 개발자도구 > 엘리먼트탭에서 확인해보면,   
+<img width="390" alt="스크린샷 2023-03-12 오후 1 16 25" src="https://user-images.githubusercontent.com/48478079/224524003-04fcdd47-f8cd-42c8-b844-97f9ea9c0e2c.png">
 
 
 
