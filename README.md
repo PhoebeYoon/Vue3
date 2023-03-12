@@ -109,5 +109,22 @@ return {
 브라우저의 개발자도구 > 엘리먼트탭에서 확인해보면,   
 <img width="390" alt="스크린샷 2023-03-12 오후 1 16 25" src="https://user-images.githubusercontent.com/48478079/224524003-04fcdd47-f8cd-42c8-b844-97f9ea9c0e2c.png">
 
+정상적으로 클래스가 들어간것처럼 보입니다. 이제 클릭이벤트를 발생시켜서 true <->false를 바꿔보도록 하겠습니다. 이 이벤트는 위에서 했던 빨간배경을 삽입또는 삭제하는 방식과 동일한데 작동하지 않습니다. 그쵸! 여기까지 따라오셨나요 ?
+여기서 ```<style>`` 태그를 보겠습니다.  style태그의 .large는 ``` { font-size: 30px;}  ```로 설정되어 있습니다. 그러니까 .large가 true 일때는 클래스가 정상적으로 적용되지만 이벤트로 해당 클래스를 제거하는것은 되질 않습니다.   
+
+아래처럼 변경해주세요 .
+``` 
+<div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" redColor = !redColor"> 
+   This is content</div>
+<div class="element" :class="{ red : redColor, large:fontLarge}"  v-on:click=" fontLarge = !fontLarge"> 
+This is content</div>
+```   
+어디가 바뀌었는지 알아보시겠습니까 ?
+클래스 large의 여부를 data문의 return문에서 바꾸도록 변경했습니다.  이 예제는 작동이 매끄럽지 않아도 색상과 글자크기를 바뀌는 것에 중심을 둔 예제이니 이것만 잘 작동하는지 확인하시면 됩니다.
+
+
+
+
+
 
 
