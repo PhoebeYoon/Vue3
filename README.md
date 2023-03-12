@@ -152,8 +152,16 @@ return {
 .large{ font-size: 40px;}
 </style>
 ```  
+이제 변경해 보도록 하겠습니다.   
+```
+ <div class="element" v-bind:class="[colors.blueClass, colors.redClass]">This is my content</div>
+  colors:{
+      blueClass:'blue',
+      redClass:'red'
+    }
 
-
+```   
+동일한 결과를 얻습니다. 
 
 
 
