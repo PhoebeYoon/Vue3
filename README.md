@@ -59,3 +59,37 @@ Vue.createApp({
 </style>
 </html>
 ```
+
+## 예제를 해보겠습니다.
+
+``` html
+<div id="app">
+     <div class="element" :class="{ red : true}" > This is content</div>
+     <div class="element" :class="{ red : redColor}"> This is content</div>
+</div>
+  <script>
+Vue.createApp({
+  data(){
+    return {
+      redColor: false
+    }
+  }
+}).mount("#app")
+  </script>
+  <style>
+    div { margin: 10px;}
+    .element { color:gold}
+    .red { background-color: red;}
+  </style>
+```
+여기서에서 return문의 redColor:true로 바꾸면 빨간배경에 노란색글자가 2줄 나옵니다. 하나는 style태그로 인해, 다른 하나는 return문의 속성지정으로 인해서 입니다.   
+여기에 클릭이벤트를 넣어서 속성의 값을 바꾸는걸 해보겠습니다.  
+
+``` <div class="element" :class="{ red : redColor}" 
+      v-on:click="redColor = !redClass"> This is content</div> ```  
+      
+return문의 redColor:false 로 되어 있는지 확인하세요. 2번째줄을 클릭하면 빨간배경에 노란글자가 나오는지 확인하세요.
+
+
+
+
