@@ -126,6 +126,43 @@ This is content</div>
 맨위에 있는 형식에서   ``` :class="{ 클래스이름: 조건}"  ``` 클래스를 삽입/삭제하는 ``` 조건 ```이 뒤따라오는데 이 ``` 조건 ```을 이벤트로 조정하려면 ``` 조건 ```을 data문에 선언해야 한다는 것입니다.  
 
 
+## 이제 다른 예제를 해보겠습니다.
+``` html
+<div id="app">
+    <div class="element" v-bind:class="colors">This is my content</div>
+    <div v-on:click="colors.red= !colors.red">Click</div>
+</div>
+<script>
+Vue.createApp({
+  data(){
+  return {
+    newStyle:{
+      fontSize:'50px',
+      border:'5px solid green'
+  },
+  colors:{
+    blueClass:{
+        name:'blue',
+        active:true
+    },
+    redClass:{
+        name:'red',
+        active:false
+    }
+} }  },
+  methods:{ }
+}).mount("#app")
+</script>
+<style>
+.element {color: white; background: black; padding:10px}
+.blue { background: blue;}
+.green {background: green;}
+.red { background: red ;}
+.large{ font-size: 40px;}
+</style>
+```  
+
+
 
 
 
