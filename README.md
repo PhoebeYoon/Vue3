@@ -159,9 +159,32 @@ return {
       blueClass:'blue',
       redClass:'red'
     }
-
 ```   
 동일한 결과를 얻습니다. 
+
+```
+<div id="app">
+    <div class="element" v-bind:class="[
+    colors.blueClass.active ? colors.blueClass.name :'', 
+    colors.redClass.active ?  colors.redClass.name :''
+    ]">This is my content</div>
+    <div v-on:click="colors.redClass.active= !colors.redClass.active">Activate Red1</div>
+  </div>
+ return {
+    colors:{
+      blueClass: {name:'blue', active :true },
+      redClass: {name:'red', active:false}
+    }
+  }
+
+```
+
+
+
+
+
+
+
 
 
 
