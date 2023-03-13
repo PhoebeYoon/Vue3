@@ -11,5 +11,44 @@
 Vue.component('my-component', {
   // 옵션
 })
-``` 
+```  
+우리가 늘 사용하던 Vue 인스턴스생성에 시간을 좀 지연시켜서 만들어 보겠습니다. 
+```html
+<body>
+  <div id="app"> {{ name}} </div>
+  <script>
+  const App = {
+    data(){
+      return {
+        name :'Kim'
+      }
+    }
+  }
+  setTimeout(()=>{
+    Vue.createApp(App).mount('#app')
+  },3000)
+  </script>
+</body>
+```
+5초후에 인스턴스가 웹페이지에 mount되는것을 확인할 수 있습니다. 이제 템플릿을 넣어보겠습니다. 이 템플릿은 html태그가 될 예정입니다
+
+```html
+body>
+  <div id="app"></div>
+  <script>
+  const App = {
+    data(){
+      return {
+        name :'Kim'
+      }
+    },
+    template:` <div> Welcome ${name} </div>`
+  }
+  setTimeout(()=>{
+    Vue.createApp(App).mount('#app')
+  },3000)
+  </script>
+```   
+실행하면 처음에는 아무것도 보이지 않다가 3초후에 'Welcome' 이라는 글자가 나타납니다.  여기서는 
+
 
