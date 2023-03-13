@@ -74,3 +74,55 @@ Vue.component('my-component', {
 
 ```
 실행후 브라우저의 개발자도구를 확인해 보시기 바랍니다. 
+이제 우리는 app 안에 인스턴스가 살아있고 이 인스턴스는 컴포넌트를 가지고 있다는것을 알게되었습니다. 그리고 컴포넌트는 자신의 data와 템플릿을 가지고 있습니다.   
+
+만약 같은 컴포넌트를 여러번 사용하려면 어떻게 할까요?
+```
+<user-name>{{name}}</user-name>
+<user-name>{{name}}</user-name>
+<user-name>{{name}}</user-name> 
+``` 
+처럼 여러번 적어주면 됩니다 
+
+다른 컴포넌트를 만들어보겠습니다. app-footer 컴포넌트, app-header 컴포넌트를 만들어보겠습니다. 
+
+``` html
+<body>
+  <div id="app"> 
+    <user-name></user-name>
+    <app-header></app-header>
+    <app-footer></app-footer>
+  </div>
+  <script>
+  const app = Vue.createApp({ })  
+  app.component('app-header',{
+    data(){
+      return {
+        name :'Header'
+      }
+    },
+    template:` <div> {{name }} </div>`
+  } );
+  app.component('app-footer',{
+    data(){
+      return {
+        name :'Footer'
+      }
+    },
+    template:` <div> {{name }} </div>`
+  } );
+  app.component('user-name',{
+    data(){
+      return {
+        name :'Kim'
+      }
+    },
+    template:` <div> {{ name }} </div>`
+  } );
+ app.mount('#app')
+  </script>
+```
+
+
+
+
