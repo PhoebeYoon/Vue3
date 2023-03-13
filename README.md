@@ -54,9 +54,9 @@ Vue.component('my-component', {
 이제 인스턴스안에 살아있는(?) 컴포넌트를 만들어보겠습니다.  
 
 ``` html
-<body>
+<<body>
   <div id="app"> 
-    <user-name>{{name}}</user-name>
+    <user-name></user-name>
   </div>
   <script>
   const app = Vue.createApp({ })  
@@ -66,7 +66,7 @@ Vue.component('my-component', {
         name :'Kim'
       }
     },
-    template:` <div> Welcome ${name} </div>`
+    template:` <div> Welcome {{ name }} </div>`
   } )
  app.mount('#app')
   </script>
@@ -78,9 +78,9 @@ Vue.component('my-component', {
 
 만약 같은 컴포넌트를 여러번 사용하려면 어떻게 할까요?
 ```
-<user-name>{{name}}</user-name>
-<user-name>{{name}}</user-name>
-<user-name>{{name}}</user-name> 
+<user-name></user-name>
+<user-name></user-name>
+<user-name></user-name> 
 ``` 
 처럼 여러번 적어주면 됩니다 
 
