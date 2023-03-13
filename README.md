@@ -33,7 +33,7 @@ Vue.component('my-component', {
 5초후에 인스턴스가 웹페이지에 mount되는것을 확인할 수 있습니다. 이제 템플릿을 넣어보겠습니다. 이 템플릿은 html태그가 될 예정입니다
 
 ```html
-body>
+<body>
   <div id="app"></div>
   <script>
   const App = {
