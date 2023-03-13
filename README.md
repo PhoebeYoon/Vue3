@@ -49,6 +49,28 @@ Vue.component('my-component', {
   },3000)
   </script>
 ```   
-실행하면 처음에는 아무것도 보이지 않다가 3초후에 'Welcome' 이라는 글자가 나타납니다.  여기서는 
+실행하면 처음에는 아무것도 보이지 않다가 3초후에 'Welcome' 이라는 글자가 나타납니다.   
 
+이제 인스턴스안에 살아있는(?) 컴포넌트를 만들어보겠습니다.  
 
+``` html
+<body>
+  <div id="app"> 
+    <user-name>{{name}}</user-name>
+  </div>
+  <script>
+  const app = Vue.createApp({ })  
+  app.component('user-name',{
+    data(){
+      return {
+        name :'Kim'
+      }
+    },
+    template:` <div> Welcome ${name} </div>`
+  } )
+ app.mount('#app')
+  </script>
+</body>
+
+```
+실행후 브라우저의 개발자도구를 확인해 보시기 바랍니다. 
