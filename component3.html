@@ -1,0 +1,54 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="app">
+      <app-header></app-header>
+      <user-name></user-name>
+      <app-footer></app-footer>
+  </div>
+
+</body>
+<script>
+
+  const app = Vue.createApp({});
+  
+  app.component('app-header',{
+      data(){
+          return{
+              name:'HEADER'
+          }
+      },
+      template:`<div>{{ name }}</div>`
+  });
+
+  app.component('user-name',{
+      data(){
+          return {
+              name:'Francis'
+          }   
+      },
+      template:`<div>{{ name }}</div>`
+  });
+
+  app.component('app-footer',{
+      data(){
+          return{
+              name:'FOOTER'
+          }
+      },
+      template:`<div>{{ name }}</div>`
+  })
+
+
+  app.mount('#app');
+ 
+</script>
+</body>
+</html>
