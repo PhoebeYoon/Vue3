@@ -1,0 +1,36 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app1"> application 1 : {{ value}}
+    <button @click="changeValue">change value</button>
+  </div>
+  <div id="app2"> application 2 : {{ value }}</div>
+ 
+  <script>
+    const App1 = {
+      data(){
+        return { value :'Instance one working'}
+      },
+      methods:{ changeValue(){
+      App2.value='The value changed'
+      }}
+    }
+    Vue.createApp(App1).mount("#app1")
+    // 이 문장에서 인스턴스가 생성
+    const App2 = {
+      data(){
+        return { value :'Instance two working'}
+      }
+    }
+
+    Vue.createApp(App2).mount("#app2")
+     // 이 문장에서 인스턴스가 생성
+  </script>
+</body>
+</html>

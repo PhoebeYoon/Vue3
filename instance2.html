@@ -1,0 +1,34 @@
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@next"></script>
+  <title>Document</title>
+</head>
+<body>
+  <div id="app1"> application 1 : {{ value}}
+    <button @click="changeValue">change value</button>
+  </div>
+  <div id="app2"> application 2 : {{ value }}</div>
+  <!-- <button @click="changeValue">change value</button> -->
+  <script>
+    const App1 = Vue.createApp({
+      data(){
+        return { value: 'Instance one working'}
+      },
+      methods:{
+        changeValue(){
+          App2.value='The value changed'
+        }
+      }
+    }).mount('#app1')
+
+    const App2 = Vue.createApp({
+      data(){
+        return { value:'Instance two working' }
+      }
+    }).mount('#app2')
+  </script>
+</body>
+</html>
